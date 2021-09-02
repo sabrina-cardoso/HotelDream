@@ -9,10 +9,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace HotelDreamDesktop
-{
+{ 
     public partial class PrincipalForm : Form
     {
         CadastrarHospedeForm formCadHospede = new CadastrarHospedeForm();
+        ListaHospedeForm formListaHospede = new ListaHospedeForm();
+
         public PrincipalForm()
         {
             InitializeComponent();
@@ -20,22 +22,22 @@ namespace HotelDreamDesktop
 
         private void btnListHospede_Click(object sender, EventArgs e)
         {
-
+            
+            CloseForms();
+            VisibleForm(formListaHospede);
         }
 
         private void btnCadHospede_Click(object sender, EventArgs e)
         {
+            
             CloseForms();
             VisibleForm(formCadHospede);
         }
 
         private void CloseForms()
         {
-            //formCadHospede.Close();
-            //formCadHospede.Visible = false;
-            //formListaHospede.Visible = false;
-            //formListaHospede.Hide();
-            //formCadHospede.Hide();
+            formCadHospede.Visible = false;
+            formListaHospede.Visible = false;
         }
 
         private void VisibleForm(Form form)

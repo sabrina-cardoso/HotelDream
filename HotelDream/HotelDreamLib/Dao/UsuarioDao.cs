@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace HotelDreamLib.Dao
 {
-    class UsuarioDao
+    public class UsuarioDao
     {
         readonly SqlConnection conn = new SqlConnection(Config.GetStringConn());
 
@@ -23,6 +23,7 @@ namespace HotelDreamLib.Dao
                 {
                     CommandType = CommandType.StoredProcedure
                 };
+                cmd.Parameters.Add(new SqlParameter("@ID", usuario.Id));
                 cmd.Parameters.Add(new SqlParameter("@NIVEL", usuario.Nivel));
                 cmd.Parameters.Add(new SqlParameter("@USUARIO", usuario.Usuario));
                 cmd.Parameters.Add(new SqlParameter("@SENHA", usuario.Senha));

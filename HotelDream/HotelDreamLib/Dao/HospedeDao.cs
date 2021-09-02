@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace HotelDreamLib.Dao
 {
-    class HospedeDao
+    public class HospedeDao
     {
         readonly SqlConnection conn = new SqlConnection(Config.GetStringConn());
 
@@ -18,7 +18,7 @@ namespace HotelDreamLib.Dao
             try
             {
                 conn.Open();
-                SqlCommand cmd = new SqlCommand("dbo.SP_CADASTRAR_HOSPEDE", conn)
+                SqlCommand cmd = new SqlCommand("dbo.SP_HOSPEDE_SET", conn)
                 {
                     CommandType = CommandType.StoredProcedure
                 };
@@ -43,13 +43,13 @@ namespace HotelDreamLib.Dao
             }
         }
 
-        public DataTable GetListHospede(string busca)
+        public DataTable GetListHospede(string busca = "")
         {
             try
             {
                 conn.Open();
                 SqlCommand cmd;
-                cmd = new SqlCommand("dbo.SP_LISTA_HOSPEDE", conn)
+                cmd = new SqlCommand("dbo.SP_HOSPEDE_GET", conn)
                 {
                     CommandType = CommandType.StoredProcedure
                 };
@@ -110,36 +110,6 @@ namespace HotelDreamLib.Dao
                 conn.Close();
             }
 
-        }
-
-        public void UpdateHospede(HospedeModel hospede)
-        {
-            try
-            {
-                conn.Open();
-                SqlCommand cmd = new SqlCommand("dbo.SP_ATUALIZAR_HOSPEDE", conn)
-                {
-                    CommandType = CommandType.StoredProcedure
-                };
-
-                cmd.Parameters.Add(new SqlParameter("@ID", hospede.Id));
-                cmd.Parameters.Add(new SqlParameter("@NOME", hospede.Nome));
-                cmd.Parameters.Add(new SqlParameter("@CPF", hospede.CPF));
-                cmd.Parameters.Add(new SqlParameter("@RG", hospede.RG));
-                cmd.Parameters.Add(new SqlParameter("@DATANASC", hospede.DataNasc));
-                cmd.Parameters.Add(new SqlParameter("@TELEFONE", hospede.Telefone));
-                cmd.Parameters.Add(new SqlParameter("@EMAIL", hospede.Email));
-
-                cmd.ExecuteNonQuery();
-            }
-            catch (Exception)
-            {
-                throw;
-            }
-            finally
-            {
-                conn.Close();
-            }
         }
     }
 }

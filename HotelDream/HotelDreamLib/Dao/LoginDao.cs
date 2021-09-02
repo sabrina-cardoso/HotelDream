@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace HotelDreamLib.Dao
 {
-    class LoginDao
+    public class LoginDao
     {
         readonly SqlConnection conn = new SqlConnection(Config.GetStringConn());
 
-        public int GetLogin(LoginModel loginModel)
+        public bool GetLogin(LoginModel loginModel)
         {
             try
             {
@@ -32,7 +32,7 @@ namespace HotelDreamLib.Dao
                 {
                     cont += 1;
                 }
-                return cont;
+                return cont == 1;
             }
             catch (Exception)
             {

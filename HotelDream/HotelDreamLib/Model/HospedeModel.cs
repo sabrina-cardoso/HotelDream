@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HotelDreamLib.Model
 {
-    class HospedeModel
+    public class HospedeModel
     {
         public int Id { get; set; }
         public string Nome { get; set; }

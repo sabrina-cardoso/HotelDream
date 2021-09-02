@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace HotelDreamLib.Dao
 {
-    class EnderecoDao
+    public class EnderecoDao
     {
         readonly SqlConnection conn = new SqlConnection(Config.GetStringConn());
 
@@ -18,7 +18,7 @@ namespace HotelDreamLib.Dao
             try
             {
                 conn.Open();
-                SqlCommand cmd = new SqlCommand("dbo.SP_CADASTRAR_ENDERECO", conn)
+                SqlCommand cmd = new SqlCommand("SP_ENDERECO_SET", conn)
                 {
                     CommandType = CommandType.StoredProcedure
                 };
@@ -88,37 +88,6 @@ namespace HotelDreamLib.Dao
 
         }
 
-        public void UpdateEndereco(EnderecoModel endereco)
-        {
-            try
-            {
-                conn.Open();
-                SqlCommand cmd = new SqlCommand("dbo.SP_ATUALIZAR_ENDERECO", conn)
-                {
-                    CommandType = CommandType.StoredProcedure
-                };
-
-                cmd.Parameters.Add(new SqlParameter("@ID", endereco.Id));
-                cmd.Parameters.Add(new SqlParameter("@CEP", endereco.CEP));
-                cmd.Parameters.Add(new SqlParameter("@ESTADO", endereco.Estado));
-                cmd.Parameters.Add(new SqlParameter("@CIDADE", endereco.Cidade));
-                cmd.Parameters.Add(new SqlParameter("@BAIRRO", endereco.Bairro));
-                cmd.Parameters.Add(new SqlParameter("@RUA", endereco.Rua));
-                cmd.Parameters.Add(new SqlParameter("@NUMERO", endereco.Numero));
-                cmd.Parameters.Add(new SqlParameter("@COMPLEMENTO", endereco.Complemento));
-
-                cmd.ExecuteNonQuery();
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-            finally
-            {
-                conn.Close();
-            }
-        }
     }
 }
 

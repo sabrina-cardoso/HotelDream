@@ -104,16 +104,16 @@ namespace HotelDreamDesktop
             this.panel1.Controls.Add(this.txtNome);
             this.panel1.Controls.Add(this.txtRg);
             this.panel1.Controls.Add(this.txtCpf);
-            this.panel1.Location = new System.Drawing.Point(14, 3);
+            this.panel1.Location = new System.Drawing.Point(18, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1143, 208);
+            this.panel1.Size = new System.Drawing.Size(1133, 208);
             this.panel1.TabIndex = 5;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.label2.Location = new System.Drawing.Point(240, 145);
+            this.label2.Location = new System.Drawing.Point(294, 144);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(66, 20);
             this.label2.TabIndex = 16;
@@ -122,20 +122,21 @@ namespace HotelDreamDesktop
             // txtTelefone
             // 
             this.txtTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtTelefone.Location = new System.Drawing.Point(240, 165);
+            this.txtTelefone.Location = new System.Drawing.Point(295, 164);
             this.txtTelefone.Name = "txtTelefone";
-            this.txtTelefone.Size = new System.Drawing.Size(207, 26);
+            this.txtTelefone.Size = new System.Drawing.Size(268, 26);
             this.txtTelefone.TabIndex = 15;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.label9.Location = new System.Drawing.Point(452, 145);
+            this.label9.Location = new System.Drawing.Point(565, 141);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(52, 20);
             this.label9.TabIndex = 14;
             this.label9.Text = "E-mail";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label10
             // 
@@ -150,9 +151,9 @@ namespace HotelDreamDesktop
             // txtEmail
             // 
             this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.txtEmail.Location = new System.Drawing.Point(452, 165);
+            this.txtEmail.Location = new System.Drawing.Point(569, 164);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(442, 27);
+            this.txtEmail.Size = new System.Drawing.Size(547, 27);
             this.txtEmail.TabIndex = 12;
             // 
             // txtDataNasc
@@ -160,14 +161,14 @@ namespace HotelDreamDesktop
             this.txtDataNasc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtDataNasc.Location = new System.Drawing.Point(25, 165);
             this.txtDataNasc.Name = "txtDataNasc";
-            this.txtDataNasc.Size = new System.Drawing.Size(211, 26);
+            this.txtDataNasc.Size = new System.Drawing.Size(264, 26);
             this.txtDataNasc.TabIndex = 11;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.label4.Location = new System.Drawing.Point(452, 95);
+            this.label4.Location = new System.Drawing.Point(565, 92);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(28, 20);
             this.label4.TabIndex = 9;
@@ -180,7 +181,7 @@ namespace HotelDreamDesktop
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1141, 30);
+            this.panel2.Size = new System.Drawing.Size(1131, 30);
             this.panel2.TabIndex = 10;
             // 
             // label5
@@ -225,9 +226,9 @@ namespace HotelDreamDesktop
             // txtRg
             // 
             this.txtRg.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.txtRg.Location = new System.Drawing.Point(452, 115);
+            this.txtRg.Location = new System.Drawing.Point(568, 114);
             this.txtRg.Name = "txtRg";
-            this.txtRg.Size = new System.Drawing.Size(442, 27);
+            this.txtRg.Size = new System.Drawing.Size(548, 27);
             this.txtRg.TabIndex = 3;
             // 
             // txtCpf
@@ -235,7 +236,7 @@ namespace HotelDreamDesktop
             this.txtCpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtCpf.Location = new System.Drawing.Point(25, 115);
             this.txtCpf.Name = "txtCpf";
-            this.txtCpf.Size = new System.Drawing.Size(422, 26);
+            this.txtCpf.Size = new System.Drawing.Size(537, 26);
             this.txtCpf.TabIndex = 2;
             // 
             // label20
@@ -277,9 +278,9 @@ namespace HotelDreamDesktop
             this.panel5.Controls.Add(this.txtCep);
             this.panel5.Controls.Add(this.txtBairro);
             this.panel5.Controls.Add(this.txtCidade);
-            this.panel5.Location = new System.Drawing.Point(15, 217);
+            this.panel5.Location = new System.Drawing.Point(19, 225);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1097, 208);
+            this.panel5.Size = new System.Drawing.Size(1132, 208);
             this.panel5.TabIndex = 22;
             // 
             // popUp
@@ -288,7 +289,7 @@ namespace HotelDreamDesktop
             this.popUp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.popUp.Controls.Add(this.btnOk);
             this.popUp.Controls.Add(this.label21);
-            this.popUp.Location = new System.Drawing.Point(358, 98);
+            this.popUp.Location = new System.Drawing.Point(446, 94);
             this.popUp.Name = "popUp";
             this.popUp.Size = new System.Drawing.Size(270, 90);
             this.popUp.TabIndex = 19;
@@ -308,6 +309,7 @@ namespace HotelDreamDesktop
             this.btnOk.TabIndex = 20;
             this.btnOk.Text = "OK";
             this.btnOk.UseVisualStyleBackColor = false;
+            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
             // label21
             // 
@@ -324,7 +326,7 @@ namespace HotelDreamDesktop
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.label19.Location = new System.Drawing.Point(451, 46);
+            this.label19.Location = new System.Drawing.Point(564, 46);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(54, 20);
             this.label19.TabIndex = 18;
@@ -333,16 +335,16 @@ namespace HotelDreamDesktop
             // txtEstado
             // 
             this.txtEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtEstado.Location = new System.Drawing.Point(451, 66);
+            this.txtEstado.Location = new System.Drawing.Point(568, 66);
             this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(442, 26);
+            this.txtEstado.Size = new System.Drawing.Size(547, 26);
             this.txtEstado.TabIndex = 17;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.label12.Location = new System.Drawing.Point(451, 145);
+            this.label12.Location = new System.Drawing.Point(567, 144);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(63, 20);
             this.label12.TabIndex = 16;
@@ -351,16 +353,16 @@ namespace HotelDreamDesktop
             // txtNumero
             // 
             this.txtNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtNumero.Location = new System.Drawing.Point(451, 165);
+            this.txtNumero.Location = new System.Drawing.Point(567, 164);
             this.txtNumero.Name = "txtNumero";
-            this.txtNumero.Size = new System.Drawing.Size(211, 26);
+            this.txtNumero.Size = new System.Drawing.Size(249, 26);
             this.txtNumero.TabIndex = 15;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.label13.Location = new System.Drawing.Point(667, 144);
+            this.label13.Location = new System.Drawing.Point(822, 144);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(104, 20);
             this.label13.TabIndex = 14;
@@ -379,9 +381,9 @@ namespace HotelDreamDesktop
             // txtComplemento
             // 
             this.txtComplemento.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.txtComplemento.Location = new System.Drawing.Point(667, 164);
+            this.txtComplemento.Location = new System.Drawing.Point(822, 164);
             this.txtComplemento.Name = "txtComplemento";
-            this.txtComplemento.Size = new System.Drawing.Size(227, 27);
+            this.txtComplemento.Size = new System.Drawing.Size(293, 27);
             this.txtComplemento.TabIndex = 12;
             // 
             // txtRua
@@ -389,14 +391,14 @@ namespace HotelDreamDesktop
             this.txtRua.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtRua.Location = new System.Drawing.Point(21, 165);
             this.txtRua.Name = "txtRua";
-            this.txtRua.Size = new System.Drawing.Size(425, 26);
+            this.txtRua.Size = new System.Drawing.Size(541, 26);
             this.txtRua.TabIndex = 11;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.label15.Location = new System.Drawing.Point(451, 94);
+            this.label15.Location = new System.Drawing.Point(567, 94);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(49, 20);
             this.label15.TabIndex = 9;
@@ -409,7 +411,7 @@ namespace HotelDreamDesktop
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(0, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1095, 30);
+            this.panel6.Size = new System.Drawing.Size(1130, 30);
             this.panel6.TabIndex = 10;
             // 
             // label16
@@ -448,15 +450,15 @@ namespace HotelDreamDesktop
             this.txtCep.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtCep.Location = new System.Drawing.Point(22, 66);
             this.txtCep.Name = "txtCep";
-            this.txtCep.Size = new System.Drawing.Size(424, 26);
+            this.txtCep.Size = new System.Drawing.Size(539, 26);
             this.txtCep.TabIndex = 0;
             // 
             // txtBairro
             // 
             this.txtBairro.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.txtBairro.Location = new System.Drawing.Point(451, 114);
+            this.txtBairro.Location = new System.Drawing.Point(568, 114);
             this.txtBairro.Name = "txtBairro";
-            this.txtBairro.Size = new System.Drawing.Size(442, 27);
+            this.txtBairro.Size = new System.Drawing.Size(547, 27);
             this.txtBairro.TabIndex = 3;
             // 
             // txtCidade
@@ -464,7 +466,7 @@ namespace HotelDreamDesktop
             this.txtCidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtCidade.Location = new System.Drawing.Point(21, 115);
             this.txtCidade.Name = "txtCidade";
-            this.txtCidade.Size = new System.Drawing.Size(425, 26);
+            this.txtCidade.Size = new System.Drawing.Size(540, 26);
             this.txtCidade.TabIndex = 2;
             // 
             // btnCadastrar
@@ -475,12 +477,13 @@ namespace HotelDreamDesktop
             this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadastrar.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnCadastrar.ForeColor = System.Drawing.Color.White;
-            this.btnCadastrar.Location = new System.Drawing.Point(912, 584);
+            this.btnCadastrar.Location = new System.Drawing.Point(912, 598);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(200, 39);
+            this.btnCadastrar.Size = new System.Drawing.Size(238, 39);
             this.btnCadastrar.TabIndex = 21;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = false;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // panel3
             // 
@@ -492,16 +495,16 @@ namespace HotelDreamDesktop
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.txtUsuario);
             this.panel3.Controls.Add(this.panel4);
-            this.panel3.Location = new System.Drawing.Point(15, 444);
+            this.panel3.Location = new System.Drawing.Point(18, 444);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1097, 134);
+            this.panel3.Size = new System.Drawing.Size(1133, 134);
             this.panel3.TabIndex = 20;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.label8.Location = new System.Drawing.Point(339, 51);
+            this.label8.Location = new System.Drawing.Point(366, 48);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(49, 20);
             this.label8.TabIndex = 18;
@@ -510,16 +513,16 @@ namespace HotelDreamDesktop
             // txtSenha
             // 
             this.txtSenha.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.txtSenha.Location = new System.Drawing.Point(339, 71);
+            this.txtSenha.Location = new System.Drawing.Point(370, 71);
             this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(270, 27);
+            this.txtSenha.Size = new System.Drawing.Size(370, 27);
             this.txtSenha.TabIndex = 17;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.label11.Location = new System.Drawing.Point(613, 51);
+            this.label11.Location = new System.Drawing.Point(742, 48);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(119, 20);
             this.label11.TabIndex = 16;
@@ -528,9 +531,9 @@ namespace HotelDreamDesktop
             // txtConfSenha
             // 
             this.txtConfSenha.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.txtConfSenha.Location = new System.Drawing.Point(613, 71);
+            this.txtConfSenha.Location = new System.Drawing.Point(746, 71);
             this.txtConfSenha.Name = "txtConfSenha";
-            this.txtConfSenha.Size = new System.Drawing.Size(281, 27);
+            this.txtConfSenha.Size = new System.Drawing.Size(370, 27);
             this.txtConfSenha.TabIndex = 15;
             // 
             // label7
@@ -548,7 +551,7 @@ namespace HotelDreamDesktop
             this.txtUsuario.Font = new System.Drawing.Font("Segoe UI", 11.25F);
             this.txtUsuario.Location = new System.Drawing.Point(24, 71);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(310, 27);
+            this.txtUsuario.Size = new System.Drawing.Size(340, 27);
             this.txtUsuario.TabIndex = 11;
             // 
             // panel4
@@ -559,7 +562,7 @@ namespace HotelDreamDesktop
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1095, 31);
+            this.panel4.Size = new System.Drawing.Size(1131, 31);
             this.panel4.TabIndex = 0;
             // 
             // label6
@@ -581,7 +584,7 @@ namespace HotelDreamDesktop
             this.panel8.Controls.Add(this.btnCadastrar);
             this.panel8.Location = new System.Drawing.Point(-2, 46);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1168, 648);
+            this.panel8.Size = new System.Drawing.Size(1167, 653);
             this.panel8.TabIndex = 17;
             // 
             // CadastrarHospedeForm
@@ -590,7 +593,7 @@ namespace HotelDreamDesktop
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1167, 712);
+            this.ClientSize = new System.Drawing.Size(1167, 700);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel7);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -660,7 +663,6 @@ namespace HotelDreamDesktop
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtConfSenha;
         private System.Windows.Forms.Label label7;
@@ -668,5 +670,6 @@ namespace HotelDreamDesktop
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.TextBox txtSenha;
     }
 }
