@@ -30,15 +30,13 @@ namespace HotelDreamDesktop
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PrincipalForm));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnCadFuncionario = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
@@ -48,32 +46,10 @@ namespace HotelDreamDesktop
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnListHospede = new System.Windows.Forms.Button();
             this.pnlCentro = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1483, 30);
-            this.panel1.TabIndex = 5;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1451, 2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(26, 26);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
             // 
             // panel2
             // 
@@ -90,11 +66,12 @@ namespace HotelDreamDesktop
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(594, 3);
+            this.label1.Location = new System.Drawing.Point(608, 5);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(317, 13);
             this.label1.TabIndex = 3;
             this.label1.Text = "Copyright©2021, Dream Hotel. Todos os direitos reservados.";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // panel3
             // 
@@ -102,7 +79,7 @@ namespace HotelDreamDesktop
             this.panel3.Controls.Add(this.button11);
             this.panel3.Controls.Add(this.button12);
             this.panel3.Controls.Add(this.button13);
-            this.panel3.Controls.Add(this.button5);
+            this.panel3.Controls.Add(this.btnCadFuncionario);
             this.panel3.Controls.Add(this.button6);
             this.panel3.Controls.Add(this.button7);
             this.panel3.Controls.Add(this.button8);
@@ -112,9 +89,9 @@ namespace HotelDreamDesktop
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Controls.Add(this.btnListHospede);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel3.Location = new System.Drawing.Point(0, 30);
+            this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(298, 599);
+            this.panel3.Size = new System.Drawing.Size(298, 629);
             this.panel3.TabIndex = 8;
             // 
             // button11
@@ -159,19 +136,20 @@ namespace HotelDreamDesktop
             this.button13.Text = "Relátorios Financeiros";
             this.button13.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btnCadFuncionario
             // 
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button5.FlatAppearance.BorderSize = 2;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button5.Location = new System.Drawing.Point(9, 383);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(280, 35);
-            this.button5.TabIndex = 15;
-            this.button5.Text = "Cadastrar Funcionário";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnCadFuncionario.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnCadFuncionario.FlatAppearance.BorderSize = 2;
+            this.btnCadFuncionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCadFuncionario.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnCadFuncionario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnCadFuncionario.Location = new System.Drawing.Point(9, 383);
+            this.btnCadFuncionario.Name = "btnCadFuncionario";
+            this.btnCadFuncionario.Size = new System.Drawing.Size(280, 35);
+            this.btnCadFuncionario.TabIndex = 15;
+            this.btnCadFuncionario.Text = "Cadastrar Funcionário";
+            this.btnCadFuncionario.UseVisualStyleBackColor = true;
+            this.btnCadFuncionario.Click += new System.EventHandler(this.btnCadFuncionario_Click);
             // 
             // button6
             // 
@@ -287,24 +265,22 @@ namespace HotelDreamDesktop
             // 
             this.pnlCentro.BackColor = System.Drawing.Color.White;
             this.pnlCentro.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlCentro.Location = new System.Drawing.Point(298, 30);
+            this.pnlCentro.Location = new System.Drawing.Point(298, 0);
             this.pnlCentro.Name = "pnlCentro";
-            this.pnlCentro.Size = new System.Drawing.Size(1185, 599);
+            this.pnlCentro.Size = new System.Drawing.Size(1185, 629);
             this.pnlCentro.TabIndex = 9;
             // 
             // PrincipalForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1483, 649);
             this.Controls.Add(this.pnlCentro);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
             this.Name = "PrincipalForm";
             this.Text = "PrincipalForm";
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -314,15 +290,13 @@ namespace HotelDreamDesktop
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnCadFuncionario;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;

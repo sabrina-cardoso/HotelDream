@@ -19,7 +19,7 @@ namespace HotelDreamLib.Dao
             {
                 conn.Open();
 
-                SqlCommand cmd = new SqlCommand("dbo.SP_CADASTRAR_USUARIO", conn)
+                SqlCommand cmd = new SqlCommand("dbo.SP_USUARIO_SET", conn)
                 {
                     CommandType = CommandType.StoredProcedure
                 };

@@ -14,6 +14,7 @@ namespace HotelDreamDesktop
     {
         CadastrarHospedeForm formCadHospede = new CadastrarHospedeForm();
         ListaHospedeForm formListaHospede = new ListaHospedeForm();
+        CadastrarFuncionarioForm formCadFunc = new CadastrarFuncionarioForm();
 
         public PrincipalForm()
         {
@@ -50,6 +51,12 @@ namespace HotelDreamDesktop
             form.WindowState = FormWindowState.Maximized;
             
             
+        }
+
+        private void btnCadFuncionario_Click(object sender, EventArgs e)
+        {
+            CloseForms();
+            VisibleForm(formCadFunc);
         }
     }
 }

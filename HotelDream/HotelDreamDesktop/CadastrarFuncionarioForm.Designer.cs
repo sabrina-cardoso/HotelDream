@@ -1,7 +1,7 @@
 ﻿
 namespace HotelDreamDesktop
 {
-    partial class CadastrarHospedeForm
+    partial class CadastrarFuncionarioForm
     {
         /// <summary>
         /// Required designer variable.
@@ -31,11 +31,17 @@ namespace HotelDreamDesktop
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.dateNasc = new System.Windows.Forms.DateTimePicker();
+            this.comboSituacao = new System.Windows.Forms.ComboBox();
+            this.comboSetor = new System.Windows.Forms.ComboBox();
+            this.dateAdm = new System.Windows.Forms.DateTimePicker();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.txtSalario = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtTelefone = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.txtEmail = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
@@ -44,12 +50,10 @@ namespace HotelDreamDesktop
             this.txtNome = new System.Windows.Forms.TextBox();
             this.txtRg = new System.Windows.Forms.TextBox();
             this.txtCpf = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.popUp = new System.Windows.Forms.Panel();
             this.btnOk = new System.Windows.Forms.Button();
-            this.lblPopUp = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.txtEstado = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -66,7 +70,6 @@ namespace HotelDreamDesktop
             this.txtCep = new System.Windows.Forms.TextBox();
             this.txtBairro = new System.Windows.Forms.TextBox();
             this.txtCidade = new System.Windows.Forms.TextBox();
-            this.btnCadastrar = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblSenhaErro = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -77,15 +80,18 @@ namespace HotelDreamDesktop
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
+            this.btnCadastrar = new System.Windows.Forms.Button();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.label20 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel7.SuspendLayout();
             this.panel5.SuspendLayout();
             this.popUp.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -93,11 +99,17 @@ namespace HotelDreamDesktop
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.dateNasc);
+            this.panel1.Controls.Add(this.comboSituacao);
+            this.panel1.Controls.Add(this.comboSetor);
+            this.panel1.Controls.Add(this.dateAdm);
+            this.panel1.Controls.Add(this.label25);
+            this.panel1.Controls.Add(this.label23);
+            this.panel1.Controls.Add(this.txtSalario);
+            this.panel1.Controls.Add(this.label22);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.txtTelefone);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.txtEmail);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.label3);
@@ -105,25 +117,93 @@ namespace HotelDreamDesktop
             this.panel1.Controls.Add(this.txtNome);
             this.panel1.Controls.Add(this.txtRg);
             this.panel1.Controls.Add(this.txtCpf);
-            this.panel1.Location = new System.Drawing.Point(18, 3);
+            this.panel1.Location = new System.Drawing.Point(15, 8);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1133, 208);
-            this.panel1.TabIndex = 5;
+            this.panel1.Size = new System.Drawing.Size(1133, 269);
+            this.panel1.TabIndex = 23;
             // 
             // dateNasc
             // 
             this.dateNasc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.dateNasc.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateNasc.Location = new System.Drawing.Point(25, 164);
+            this.dateNasc.Location = new System.Drawing.Point(25, 165);
             this.dateNasc.Name = "dateNasc";
-            this.dateNasc.Size = new System.Drawing.Size(264, 26);
-            this.dateNasc.TabIndex = 17;
+            this.dateNasc.Size = new System.Drawing.Size(354, 26);
+            this.dateNasc.TabIndex = 30;
+            // 
+            // comboSituacao
+            // 
+            this.comboSituacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.comboSituacao.FormattingEnabled = true;
+            this.comboSituacao.Items.AddRange(new object[] {
+            "Ativo",
+            "Inativo"});
+            this.comboSituacao.Location = new System.Drawing.Point(25, 214);
+            this.comboSituacao.Name = "comboSituacao";
+            this.comboSituacao.Size = new System.Drawing.Size(353, 28);
+            this.comboSituacao.TabIndex = 29;
+            // 
+            // comboSetor
+            // 
+            this.comboSetor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.comboSetor.FormattingEnabled = true;
+            this.comboSetor.Location = new System.Drawing.Point(751, 165);
+            this.comboSetor.Name = "comboSetor";
+            this.comboSetor.Size = new System.Drawing.Size(365, 28);
+            this.comboSetor.TabIndex = 28;
+            // 
+            // dateAdm
+            // 
+            this.dateAdm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.dateAdm.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateAdm.Location = new System.Drawing.Point(384, 216);
+            this.dateAdm.Name = "dateAdm";
+            this.dateAdm.Size = new System.Drawing.Size(360, 26);
+            this.dateAdm.TabIndex = 25;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.label25.Location = new System.Drawing.Point(747, 195);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(55, 20);
+            this.label25.TabIndex = 24;
+            this.label25.Text = "Salario";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.label23.Location = new System.Drawing.Point(381, 195);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(131, 20);
+            this.label23.TabIndex = 22;
+            this.label23.Text = "Data de Admissão";
+            // 
+            // txtSalario
+            // 
+            this.txtSalario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtSalario.Location = new System.Drawing.Point(750, 216);
+            this.txtSalario.Name = "txtSalario";
+            this.txtSalario.Size = new System.Drawing.Size(366, 26);
+            this.txtSalario.TabIndex = 21;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.label22.Location = new System.Drawing.Point(25, 192);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(66, 20);
+            this.label22.TabIndex = 18;
+            this.label22.Text = "Situação";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.label2.Location = new System.Drawing.Point(294, 144);
+            this.label2.Location = new System.Drawing.Point(381, 145);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(66, 20);
             this.label2.TabIndex = 16;
@@ -132,38 +212,30 @@ namespace HotelDreamDesktop
             // txtTelefone
             // 
             this.txtTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtTelefone.Location = new System.Drawing.Point(295, 164);
+            this.txtTelefone.Location = new System.Drawing.Point(385, 165);
             this.txtTelefone.Name = "txtTelefone";
-            this.txtTelefone.Size = new System.Drawing.Size(268, 26);
+            this.txtTelefone.Size = new System.Drawing.Size(360, 26);
             this.txtTelefone.TabIndex = 15;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.label9.Location = new System.Drawing.Point(565, 141);
+            this.label9.Location = new System.Drawing.Point(747, 144);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(52, 20);
+            this.label9.Size = new System.Drawing.Size(44, 20);
             this.label9.TabIndex = 14;
-            this.label9.Text = "E-mail";
+            this.label9.Text = "Setor";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.label10.Location = new System.Drawing.Point(25, 145);
+            this.label10.Location = new System.Drawing.Point(24, 145);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(145, 20);
             this.label10.TabIndex = 13;
             this.label10.Text = "Data de Nascimento";
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.txtEmail.Location = new System.Drawing.Point(569, 164);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(547, 27);
-            this.txtEmail.TabIndex = 12;
             // 
             // label4
             // 
@@ -240,26 +312,6 @@ namespace HotelDreamDesktop
             this.txtCpf.Size = new System.Drawing.Size(537, 26);
             this.txtCpf.TabIndex = 2;
             // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Segoe UI", 15.75F);
-            this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(511, 2);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(189, 30);
-            this.label20.TabIndex = 11;
-            this.label20.Text = "Cadastrar Hóspede";
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.panel7.Controls.Add(this.label20);
-            this.panel7.Location = new System.Drawing.Point(-2, 5);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1168, 35);
-            this.panel7.TabIndex = 19;
-            // 
             // panel5
             // 
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -279,18 +331,18 @@ namespace HotelDreamDesktop
             this.panel5.Controls.Add(this.txtCep);
             this.panel5.Controls.Add(this.txtBairro);
             this.panel5.Controls.Add(this.txtCidade);
-            this.panel5.Location = new System.Drawing.Point(19, 225);
+            this.panel5.Location = new System.Drawing.Point(16, 285);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1132, 208);
-            this.panel5.TabIndex = 22;
+            this.panel5.TabIndex = 26;
             // 
             // popUp
             // 
             this.popUp.BackColor = System.Drawing.Color.White;
             this.popUp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.popUp.Controls.Add(this.btnOk);
-            this.popUp.Controls.Add(this.lblPopUp);
-            this.popUp.Location = new System.Drawing.Point(446, 94);
+            this.popUp.Controls.Add(this.label21);
+            this.popUp.Location = new System.Drawing.Point(446, 98);
             this.popUp.Name = "popUp";
             this.popUp.Size = new System.Drawing.Size(270, 90);
             this.popUp.TabIndex = 19;
@@ -312,16 +364,16 @@ namespace HotelDreamDesktop
             this.btnOk.UseVisualStyleBackColor = false;
             this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
-            // lblPopUp
+            // label21
             // 
-            this.lblPopUp.AutoSize = true;
-            this.lblPopUp.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.lblPopUp.ForeColor = System.Drawing.Color.Green;
-            this.lblPopUp.Location = new System.Drawing.Point(13, 15);
-            this.lblPopUp.Name = "lblPopUp";
-            this.lblPopUp.Size = new System.Drawing.Size(242, 20);
-            this.lblPopUp.TabIndex = 14;
-            this.lblPopUp.Text = "Hóspede Cadastrado com Sucesso!";
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.label21.ForeColor = System.Drawing.Color.Green;
+            this.label21.Location = new System.Drawing.Point(5, 15);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(259, 20);
+            this.label21.TabIndex = 14;
+            this.label21.Text = "Funcionário Cadastrado com Sucesso!";
             // 
             // label19
             // 
@@ -335,6 +387,7 @@ namespace HotelDreamDesktop
             // 
             // txtEstado
             // 
+            this.txtEstado.Enabled = false;
             this.txtEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtEstado.Location = new System.Drawing.Point(568, 66);
             this.txtEstado.Name = "txtEstado";
@@ -389,6 +442,7 @@ namespace HotelDreamDesktop
             // 
             // txtRua
             // 
+            this.txtRua.Enabled = false;
             this.txtRua.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtRua.Location = new System.Drawing.Point(21, 165);
             this.txtRua.Name = "txtRua";
@@ -453,9 +507,11 @@ namespace HotelDreamDesktop
             this.txtCep.Name = "txtCep";
             this.txtCep.Size = new System.Drawing.Size(539, 26);
             this.txtCep.TabIndex = 0;
+            this.txtCep.Leave += new System.EventHandler(this.txtCep_Leave);
             // 
             // txtBairro
             // 
+            this.txtBairro.Enabled = false;
             this.txtBairro.Font = new System.Drawing.Font("Segoe UI", 11.25F);
             this.txtBairro.Location = new System.Drawing.Point(568, 114);
             this.txtBairro.Name = "txtBairro";
@@ -464,27 +520,12 @@ namespace HotelDreamDesktop
             // 
             // txtCidade
             // 
+            this.txtCidade.Enabled = false;
             this.txtCidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtCidade.Location = new System.Drawing.Point(21, 115);
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Size = new System.Drawing.Size(540, 26);
             this.txtCidade.TabIndex = 2;
-            // 
-            // btnCadastrar
-            // 
-            this.btnCadastrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.btnCadastrar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.btnCadastrar.FlatAppearance.BorderSize = 2;
-            this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCadastrar.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.btnCadastrar.ForeColor = System.Drawing.Color.White;
-            this.btnCadastrar.Location = new System.Drawing.Point(912, 598);
-            this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(238, 39);
-            this.btnCadastrar.TabIndex = 21;
-            this.btnCadastrar.Text = "Cadastrar";
-            this.btnCadastrar.UseVisualStyleBackColor = false;
-            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // panel3
             // 
@@ -497,10 +538,10 @@ namespace HotelDreamDesktop
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.txtUsuario);
             this.panel3.Controls.Add(this.panel4);
-            this.panel3.Location = new System.Drawing.Point(18, 444);
+            this.panel3.Location = new System.Drawing.Point(17, 506);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1133, 134);
-            this.panel3.TabIndex = 20;
+            this.panel3.TabIndex = 24;
             // 
             // lblSenhaErro
             // 
@@ -510,7 +551,7 @@ namespace HotelDreamDesktop
             this.lblSenhaErro.Location = new System.Drawing.Point(745, 101);
             this.lblSenhaErro.Name = "lblSenhaErro";
             this.lblSenhaErro.Size = new System.Drawing.Size(186, 20);
-            this.lblSenhaErro.TabIndex = 21;
+            this.lblSenhaErro.TabIndex = 22;
             this.lblSenhaErro.Text = "senhas não correspondem!";
             // 
             // label8
@@ -591,35 +632,70 @@ namespace HotelDreamDesktop
             this.label6.TabIndex = 11;
             this.label6.Text = "Dados de Acesso";
             // 
+            // btnCadastrar
+            // 
+            this.btnCadastrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnCadastrar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnCadastrar.FlatAppearance.BorderSize = 2;
+            this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCadastrar.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnCadastrar.ForeColor = System.Drawing.Color.White;
+            this.btnCadastrar.Location = new System.Drawing.Point(912, 663);
+            this.btnCadastrar.Name = "btnCadastrar";
+            this.btnCadastrar.Size = new System.Drawing.Size(238, 39);
+            this.btnCadastrar.TabIndex = 25;
+            this.btnCadastrar.Text = "Cadastrar";
+            this.btnCadastrar.UseVisualStyleBackColor = false;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.panel7.Controls.Add(this.label20);
+            this.panel7.Location = new System.Drawing.Point(0, 6);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(1167, 35);
+            this.panel7.TabIndex = 27;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Segoe UI", 15.75F);
+            this.label20.ForeColor = System.Drawing.Color.White;
+            this.label20.Location = new System.Drawing.Point(496, 2);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(210, 30);
+            this.label20.TabIndex = 11;
+            this.label20.Text = "Cadastrar Funcionáro";
+            // 
             // panel8
             // 
             this.panel8.Controls.Add(this.panel1);
-            this.panel8.Controls.Add(this.panel5);
-            this.panel8.Controls.Add(this.panel3);
             this.panel8.Controls.Add(this.btnCadastrar);
-            this.panel8.Location = new System.Drawing.Point(-2, 46);
+            this.panel8.Controls.Add(this.panel3);
+            this.panel8.Controls.Add(this.panel5);
+            this.panel8.Location = new System.Drawing.Point(0, 47);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1167, 653);
-            this.panel8.TabIndex = 17;
+            this.panel8.Size = new System.Drawing.Size(1167, 731);
+            this.panel8.TabIndex = 30;
             // 
-            // CadastrarHospedeForm
+            // CadastrarFuncionarioForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1167, 700);
+            this.ClientSize = new System.Drawing.Size(1167, 782);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel7);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "CadastrarHospedeForm";
-            this.Text = "CadastrarHospedeForm";
+            this.Name = "CadastrarFuncionarioForm";
+            this.Text = "CadastrarFuncionarioForm";
+            this.Load += new System.EventHandler(this.CadastrarFuncionarioForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.popUp.ResumeLayout(false);
@@ -630,6 +706,8 @@ namespace HotelDreamDesktop
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -642,7 +720,6 @@ namespace HotelDreamDesktop
         private System.Windows.Forms.TextBox txtTelefone;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label5;
@@ -651,12 +728,10 @@ namespace HotelDreamDesktop
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.TextBox txtRg;
         private System.Windows.Forms.TextBox txtCpf;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel popUp;
         private System.Windows.Forms.Button btnOk;
-        private System.Windows.Forms.Label lblPopUp;
+        private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox txtEstado;
         private System.Windows.Forms.Label label12;
@@ -673,18 +748,27 @@ namespace HotelDreamDesktop
         private System.Windows.Forms.TextBox txtCep;
         private System.Windows.Forms.TextBox txtBairro;
         private System.Windows.Forms.TextBox txtCidade;
-        private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtConfSenha;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnCadastrar;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.TextBox txtSalario;
+        private System.Windows.Forms.DateTimePicker dateAdm;
+        private System.Windows.Forms.ComboBox comboSituacao;
+        private System.Windows.Forms.ComboBox comboSetor;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.TextBox txtSenha;
-        private System.Windows.Forms.DateTimePicker dateNasc;
         private System.Windows.Forms.Label lblSenhaErro;
+        private System.Windows.Forms.DateTimePicker dateNasc;
     }
 }

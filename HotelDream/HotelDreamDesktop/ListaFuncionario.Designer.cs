@@ -1,7 +1,7 @@
 ﻿
 namespace HotelDreamDesktop
 {
-    partial class ListaHospedeForm
+    partial class ListaFuncionario
     {
         /// <summary>
         /// Required designer variable.
@@ -36,7 +36,7 @@ namespace HotelDreamDesktop
             this.label20 = new System.Windows.Forms.Label();
             this.btnAtualizar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.dgvHospede = new System.Windows.Forms.DataGridView();
+            this.dgvFuncionario = new System.Windows.Forms.DataGridView();
             this.colEditar = new System.Windows.Forms.DataGridViewImageColumn();
             this.colExcluir = new System.Windows.Forms.DataGridViewImageColumn();
             this.tabEdicao = new System.Windows.Forms.TabPage();
@@ -80,7 +80,7 @@ namespace HotelDreamDesktop
             this.tabControl.SuspendLayout();
             this.tabLista.SuspendLayout();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvHospede)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFuncionario)).BeginInit();
             this.tabEdicao.SuspendLayout();
             this.panel5.SuspendLayout();
             this.popUp.SuspendLayout();
@@ -93,11 +93,11 @@ namespace HotelDreamDesktop
             // 
             this.tabControl.Controls.Add(this.tabLista);
             this.tabControl.Controls.Add(this.tabEdicao);
-            this.tabControl.Location = new System.Drawing.Point(1, 2);
+            this.tabControl.Location = new System.Drawing.Point(-2, 2);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
             this.tabControl.Size = new System.Drawing.Size(1168, 596);
-            this.tabControl.TabIndex = 25;
+            this.tabControl.TabIndex = 26;
             // 
             // tabLista
             // 
@@ -105,7 +105,7 @@ namespace HotelDreamDesktop
             this.tabLista.Controls.Add(this.panel7);
             this.tabLista.Controls.Add(this.btnAtualizar);
             this.tabLista.Controls.Add(this.btnBuscar);
-            this.tabLista.Controls.Add(this.dgvHospede);
+            this.tabLista.Controls.Add(this.dgvFuncionario);
             this.tabLista.Location = new System.Drawing.Point(4, 22);
             this.tabLista.Name = "tabLista";
             this.tabLista.Padding = new System.Windows.Forms.Padding(3);
@@ -138,9 +138,9 @@ namespace HotelDreamDesktop
             this.label20.ForeColor = System.Drawing.Color.White;
             this.label20.Location = new System.Drawing.Point(513, 2);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(181, 30);
+            this.label20.Size = new System.Drawing.Size(207, 30);
             this.label20.TabIndex = 11;
-            this.label20.Text = "Lista de Hóspedes";
+            this.label20.Text = "Lista de Funcionários";
             // 
             // btnAtualizar
             // 
@@ -156,7 +156,6 @@ namespace HotelDreamDesktop
             this.btnAtualizar.TabIndex = 23;
             this.btnAtualizar.Text = "Atualizar";
             this.btnAtualizar.UseVisualStyleBackColor = false;
-            this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
             // 
             // btnBuscar
             // 
@@ -172,25 +171,23 @@ namespace HotelDreamDesktop
             this.btnBuscar.TabIndex = 22;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click_1);
             // 
-            // dgvHospede
+            // dgvFuncionario
             // 
-            this.dgvHospede.AllowUserToAddRows = false;
-            this.dgvHospede.AllowUserToDeleteRows = false;
-            this.dgvHospede.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvHospede.BackgroundColor = System.Drawing.Color.White;
-            this.dgvHospede.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvHospede.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvFuncionario.AllowUserToAddRows = false;
+            this.dgvFuncionario.AllowUserToDeleteRows = false;
+            this.dgvFuncionario.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvFuncionario.BackgroundColor = System.Drawing.Color.White;
+            this.dgvFuncionario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvFuncionario.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colEditar,
             this.colExcluir});
-            this.dgvHospede.Location = new System.Drawing.Point(12, 112);
-            this.dgvHospede.Name = "dgvHospede";
-            this.dgvHospede.ReadOnly = true;
-            this.dgvHospede.RowTemplate.Height = 25;
-            this.dgvHospede.Size = new System.Drawing.Size(1136, 445);
-            this.dgvHospede.TabIndex = 0;
-            this.dgvHospede.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHospede_CellContentClick);
+            this.dgvFuncionario.Location = new System.Drawing.Point(12, 112);
+            this.dgvFuncionario.Name = "dgvFuncionario";
+            this.dgvFuncionario.ReadOnly = true;
+            this.dgvFuncionario.RowTemplate.Height = 25;
+            this.dgvFuncionario.Size = new System.Drawing.Size(1136, 445);
+            this.dgvFuncionario.TabIndex = 0;
             // 
             // colEditar
             // 
@@ -209,6 +206,7 @@ namespace HotelDreamDesktop
             // tabEdicao
             // 
             this.tabEdicao.AutoScroll = true;
+            this.tabEdicao.Controls.Add(this.popUp);
             this.tabEdicao.Controls.Add(this.btnSalvar);
             this.tabEdicao.Controls.Add(this.panel5);
             this.tabEdicao.Controls.Add(this.panel1);
@@ -233,12 +231,10 @@ namespace HotelDreamDesktop
             this.btnSalvar.TabIndex = 19;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = false;
-            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // panel5
             // 
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.popUp);
             this.panel5.Controls.Add(this.label19);
             this.panel5.Controls.Add(this.txtEstado);
             this.panel5.Controls.Add(this.label12);
@@ -265,7 +261,7 @@ namespace HotelDreamDesktop
             this.popUp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.popUp.Controls.Add(this.btnOk);
             this.popUp.Controls.Add(this.label6);
-            this.popUp.Location = new System.Drawing.Point(425, 36);
+            this.popUp.Location = new System.Drawing.Point(195, 453);
             this.popUp.Name = "popUp";
             this.popUp.Size = new System.Drawing.Size(280, 95);
             this.popUp.TabIndex = 18;
@@ -285,7 +281,6 @@ namespace HotelDreamDesktop
             this.btnOk.TabIndex = 20;
             this.btnOk.Text = "OK";
             this.btnOk.UseVisualStyleBackColor = false;
-            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
             // label6
             // 
@@ -608,22 +603,21 @@ namespace HotelDreamDesktop
             this.txtCpf.Size = new System.Drawing.Size(515, 26);
             this.txtCpf.TabIndex = 2;
             // 
-            // ListaHospedeForm
+            // ListaFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1167, 599);
+            this.ClientSize = new System.Drawing.Size(1168, 596);
             this.Controls.Add(this.tabControl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "ListaHospedeForm";
-            this.Text = "ListaHospedeForm";
+            this.Name = "ListaFuncionario";
+            this.Text = "ListaFuncionario";
             this.tabControl.ResumeLayout(false);
             this.tabLista.ResumeLayout(false);
             this.tabLista.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvHospede)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFuncionario)).EndInit();
             this.tabEdicao.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
@@ -648,7 +642,7 @@ namespace HotelDreamDesktop
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Button btnAtualizar;
         private System.Windows.Forms.Button btnBuscar;
-        private System.Windows.Forms.DataGridView dgvHospede;
+        private System.Windows.Forms.DataGridView dgvFuncionario;
         private System.Windows.Forms.DataGridViewImageColumn colEditar;
         private System.Windows.Forms.DataGridViewImageColumn colExcluir;
         private System.Windows.Forms.TabPage tabEdicao;
@@ -674,6 +668,7 @@ namespace HotelDreamDesktop
         private System.Windows.Forms.TextBox txtBairro;
         private System.Windows.Forms.TextBox txtCidade;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DateTimePicker dateNasc;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtTelefone;
@@ -688,6 +683,5 @@ namespace HotelDreamDesktop
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.TextBox txtRg;
         private System.Windows.Forms.TextBox txtCpf;
-        private System.Windows.Forms.DateTimePicker dateNasc;
     }
 }

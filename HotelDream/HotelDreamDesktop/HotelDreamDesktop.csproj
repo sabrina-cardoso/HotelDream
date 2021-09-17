@@ -33,8 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Correios, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Correios-Api.1.1.1\lib\portable-net45+win\Correios.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,11 +50,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CadastrarFuncionarioForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrarFuncionarioForm.Designer.cs">
+      <DependentUpon>CadastrarFuncionarioForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CadastrarHospedeForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CadastrarHospedeForm.Designer.cs">
       <DependentUpon>CadastrarHospedeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaFuncionario.Designer.cs">
+      <DependentUpon>ListaFuncionario.cs</DependentUpon>
     </Compile>
     <Compile Include="ListaHospedeForm.cs">
       <SubType>Form</SubType>
@@ -72,8 +88,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CadastrarFuncionarioForm.resx">
+      <DependentUpon>CadastrarFuncionarioForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CadastrarHospedeForm.resx">
       <DependentUpon>CadastrarHospedeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaFuncionario.resx">
+      <DependentUpon>ListaFuncionario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListaHospedeForm.resx">
       <DependentUpon>ListaHospedeForm.cs</DependentUpon>
@@ -93,6 +115,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

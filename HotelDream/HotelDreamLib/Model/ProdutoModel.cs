@@ -6,14 +6,12 @@ using System.Threading.Tasks;
 
 namespace HotelDreamLib.Model
 {
-    public class HospedeModel
+    class ProdutoModel
     {
         public int Id { get; set; }
         public string Nome { get; set; }
-        public string CPF { get; set; }
-        public string RG { get; set; }
-        public DateTime DataNasc { get; set; }
-        public string Telefone { get; set; }
-        public string Email { get; set; }
+        public int Categoria { get; set; }
+        public int Disponivel { get; set; }
+        public string Descricao { get; set; }
     }
 }

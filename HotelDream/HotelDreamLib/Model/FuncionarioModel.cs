@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HotelDreamLib.Model
 {
-    public class HospedeModel
+    public class FuncionarioModel
     {
         public int Id { get; set; }
         public string Nome { get; set; }
@@ -14,6 +14,10 @@ namespace HotelDreamLib.Model
         public string RG { get; set; }
         public DateTime DataNasc { get; set; }
         public string Telefone { get; set; }
-        public string Email { get; set; }
+        public int Setor { get; set; }
+        public int Situacao { get; set; }
+        public DateTime DataAdm { get; set; }
+        public DateTime DataDem { get; set; }
+        public double Salario { get; set; }
     }
 }

@@ -46,7 +46,7 @@ namespace HotelDreamDesktop
             hospede.Nome = txtNome.Text;
             hospede.CPF = txtCpf.Text;
             hospede.RG = txtRg.Text;
-            hospede.DataNasc = txtDataNasc.Text;
+            hospede.DataNasc = Convert.ToDateTime(dateNasc);
             hospede.Telefone = txtTelefone.Text;
             hospede.Email = txtEmail.Text;
 
@@ -83,7 +83,7 @@ namespace HotelDreamDesktop
                 txtNome.Text = hospede.Nome;
                 txtCpf.Text = hospede.CPF;
                 txtRg.Text = hospede.RG;
-                txtDataNasc.Text = hospede.DataNasc;
+                dateNasc.Value = hospede.DataNasc;
                 txtTelefone.Text = hospede.Telefone;
                 txtEmail.Text = hospede.Email;
 

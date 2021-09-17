@@ -43,12 +43,16 @@
   <ItemGroup>
     <Compile Include="Dao\Config.cs" />
     <Compile Include="Dao\EnderecoDao.cs" />
+    <Compile Include="Dao\FuncionarioDao.cs" />
     <Compile Include="Dao\HospedeDao.cs" />
     <Compile Include="Dao\LoginDao.cs" />
     <Compile Include="Dao\UsuarioDao.cs" />
     <Compile Include="Model\EnderecoModel.cs" />
+    <Compile Include="Model\FuncionarioModel.cs" />
     <Compile Include="Model\HospedeModel.cs" />
     <Compile Include="Model\LoginModel.cs" />
+    <Compile Include="Model\ProdutoCategoriaModel.cs" />
+    <Compile Include="Model\ProdutoModel.cs" />
     <Compile Include="Model\UsuarioModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
