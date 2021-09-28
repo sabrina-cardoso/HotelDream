@@ -104,10 +104,32 @@ namespace HotelDreamLib.Dao
                     funcionario.Setor = Convert.ToInt32(linha["SETOR"]);
                     funcionario.Situacao = Convert.ToInt32(linha["SITUACAO"]);
                     funcionario.DataAdm = Convert.ToDateTime(linha["DATAADM"]);
-                    funcionario.DataDem = Convert.ToDateTime(linha["DATADEM"]);
+                    funcionario.DataDem = linha["DATADEM"] != DBNull.Value ? Convert.ToDateTime(linha["DATADEM"]) : Convert.ToDateTime("01/01/9998");
                     funcionario.Salario = Convert.ToDouble(linha["SALARIO"]);
                 }
                 return funcionario;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        public void DeleteFuncionario(string id)
+        {
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("UPDATE TB_FUNCIONARIO SET DEL_FLAG = 1 WHERE ID='" + id + "'", conn)
+                {
+                    CommandType = CommandType.Text
+                };
+
+                cmd.ExecuteNonQuery();
             }
             catch (Exception)
             {

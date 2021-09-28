@@ -12,5 +12,6 @@ namespace HotelDreamLib.Model
         public int Nivel { get; set; }
         public string Usuario { get; set; }
         public string Senha { get; set; }
+        public int Status { get; set; }
     }
 }

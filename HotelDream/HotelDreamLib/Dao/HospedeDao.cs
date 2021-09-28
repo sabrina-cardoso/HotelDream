@@ -111,6 +111,28 @@ namespace HotelDreamLib.Dao
             }
 
         }
+
+        public void DeleteHospede(string id)
+        {
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("UPDATE TB_HOSPEDE SET DEL_FLAG = 1 WHERE ID='" + id + "'", conn)
+                {
+                    CommandType = CommandType.Text
+                };
+
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
     }
 }
 

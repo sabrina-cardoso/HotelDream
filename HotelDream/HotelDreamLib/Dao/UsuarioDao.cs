@@ -27,9 +27,39 @@ namespace HotelDreamLib.Dao
                 cmd.Parameters.Add(new SqlParameter("@NIVEL", usuario.Nivel));
                 cmd.Parameters.Add(new SqlParameter("@USUARIO", usuario.Usuario));
                 cmd.Parameters.Add(new SqlParameter("@SENHA", usuario.Senha));
+                cmd.Parameters.Add(new SqlParameter("@STATUS", usuario.Status));
                 cmd.ExecuteNonQuery();
 
                 conn.Close();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        public object GetStatus()
+        {
+            try
+            {
+                conn.Open();
+                SqlCommand cmd;
+                cmd = new SqlCommand("SELECT * FROM TB_STATUS_USUARIO")
+                {
+                    CommandType = CommandType.Text,
+                    Connection = conn
+                };
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                return dt;
+
+
             }
             catch (Exception)
             {
@@ -67,5 +97,33 @@ namespace HotelDreamLib.Dao
                 conn.Close();
             }
         }
+
+        public DataTable GetListUsuario(string busca = "")
+        {
+            try
+            {
+                conn.Open();
+                SqlCommand cmd;
+                cmd = new SqlCommand("dbo.SP_USUARIO_GET", conn)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                cmd.Parameters.Add(new SqlParameter("@BUSCA", busca));
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                return dt;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
     }
 }

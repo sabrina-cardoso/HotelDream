@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelDreamLib", "HotelDream
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelDreamDesktop", "HotelDreamDesktop\HotelDreamDesktop.csproj", "{5F6317C6-DF8F-4824-B0C5-A490176D6387}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelDreamWeb", "HotelDreamWeb\HotelDreamWeb.csproj", "{FD8E998F-64C3-409A-9D43-8FA2B4DA8DD1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{5F6317C6-DF8F-4824-B0C5-A490176D6387}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F6317C6-DF8F-4824-B0C5-A490176D6387}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F6317C6-DF8F-4824-B0C5-A490176D6387}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD8E998F-64C3-409A-9D43-8FA2B4DA8DD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD8E998F-64C3-409A-9D43-8FA2B4DA8DD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD8E998F-64C3-409A-9D43-8FA2B4DA8DD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD8E998F-64C3-409A-9D43-8FA2B4DA8DD1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

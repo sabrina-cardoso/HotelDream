@@ -50,61 +50,70 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CadastrarFuncionarioForm.cs">
+    <Compile Include="FrmCadastrarFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CadastrarFuncionarioForm.Designer.cs">
-      <DependentUpon>CadastrarFuncionarioForm.cs</DependentUpon>
+    <Compile Include="FrmCadastrarFuncionario.Designer.cs">
+      <DependentUpon>FrmCadastrarFuncionario.cs</DependentUpon>
     </Compile>
-    <Compile Include="CadastrarHospedeForm.cs">
+    <Compile Include="FrmCadastrarHospede.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CadastrarHospedeForm.Designer.cs">
-      <DependentUpon>CadastrarHospedeForm.cs</DependentUpon>
+    <Compile Include="FrmCadastrarHospede.Designer.cs">
+      <DependentUpon>FrmCadastrarHospede.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListaFuncionario.cs">
+    <Compile Include="FrmCadastrarReserva.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ListaFuncionario.Designer.cs">
-      <DependentUpon>ListaFuncionario.cs</DependentUpon>
+    <Compile Include="FrmCadastrarReserva.Designer.cs">
+      <DependentUpon>FrmCadastrarReserva.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListaHospedeForm.cs">
+    <Compile Include="FrmListaFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ListaHospedeForm.Designer.cs">
-      <DependentUpon>ListaHospedeForm.cs</DependentUpon>
+    <Compile Include="FrmListaFuncionario.Designer.cs">
+      <DependentUpon>FrmListaFuncionario.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginForm.cs">
+    <Compile Include="FrmListaHospede.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginForm.Designer.cs">
-      <DependentUpon>LoginForm.cs</DependentUpon>
+    <Compile Include="FrmListaHospede.Designer.cs">
+      <DependentUpon>FrmListaHospede.cs</DependentUpon>
     </Compile>
-    <Compile Include="PrincipalForm.cs">
+    <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PrincipalForm.Designer.cs">
-      <DependentUpon>PrincipalForm.cs</DependentUpon>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="CadastrarFuncionarioForm.resx">
-      <DependentUpon>CadastrarFuncionarioForm.cs</DependentUpon>
+    <EmbeddedResource Include="FrmCadastrarFuncionario.resx">
+      <DependentUpon>FrmCadastrarFuncionario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CadastrarHospedeForm.resx">
-      <DependentUpon>CadastrarHospedeForm.cs</DependentUpon>
+    <EmbeddedResource Include="FrmCadastrarHospede.resx">
+      <DependentUpon>FrmCadastrarHospede.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ListaFuncionario.resx">
-      <DependentUpon>ListaFuncionario.cs</DependentUpon>
+    <EmbeddedResource Include="FrmCadastrarReserva.resx">
+      <DependentUpon>FrmCadastrarReserva.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ListaHospedeForm.resx">
-      <DependentUpon>ListaHospedeForm.cs</DependentUpon>
+    <EmbeddedResource Include="FrmListaFuncionario.resx">
+      <DependentUpon>FrmListaFuncionario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginForm.resx">
-      <DependentUpon>LoginForm.cs</DependentUpon>
+    <EmbeddedResource Include="FrmListaHospede.resx">
+      <DependentUpon>FrmListaHospede.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PrincipalForm.resx">
-      <DependentUpon>PrincipalForm.cs</DependentUpon>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -134,6 +143,10 @@
       <Project>{c2d01dfe-7dcd-46e1-8be0-7f99d8305fa6}</Project>
       <Name>HotelDreamLib</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\delete.png" />
+    <Content Include="Images\edit.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
