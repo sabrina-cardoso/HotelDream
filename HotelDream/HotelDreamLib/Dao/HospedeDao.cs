@@ -89,7 +89,6 @@ namespace HotelDreamLib.Dao
 
                 foreach (DataRow linha in dt.Rows)
                 {
-
                     hospedeModel.Id = int.Parse(linha["ID"].ToString());
                     hospedeModel.Nome = linha["NOME"].ToString();
                     hospedeModel.Nome = linha["NOME"].ToString();

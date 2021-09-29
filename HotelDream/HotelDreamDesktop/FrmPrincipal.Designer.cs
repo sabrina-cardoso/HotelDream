@@ -40,7 +40,7 @@ namespace HotelDreamDesktop
             this.btnListFuncionario = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnCadReserva = new System.Windows.Forms.Button();
             this.btnListReserva = new System.Windows.Forms.Button();
             this.btnCadHospede = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -83,7 +83,7 @@ namespace HotelDreamDesktop
             this.panel3.Controls.Add(this.btnListFuncionario);
             this.panel3.Controls.Add(this.button7);
             this.panel3.Controls.Add(this.button8);
-            this.panel3.Controls.Add(this.button3);
+            this.panel3.Controls.Add(this.btnCadReserva);
             this.panel3.Controls.Add(this.btnListReserva);
             this.panel3.Controls.Add(this.btnCadHospede);
             this.panel3.Controls.Add(this.pictureBox1);
@@ -194,19 +194,20 @@ namespace HotelDreamDesktop
             this.button8.Text = "Lista de Produtos";
             this.button8.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnCadReserva
             // 
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button3.FlatAppearance.BorderSize = 2;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button3.Location = new System.Drawing.Point(9, 209);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(280, 35);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "Cadastrar Reserva";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnCadReserva.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnCadReserva.FlatAppearance.BorderSize = 2;
+            this.btnCadReserva.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCadReserva.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnCadReserva.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnCadReserva.Location = new System.Drawing.Point(9, 209);
+            this.btnCadReserva.Name = "btnCadReserva";
+            this.btnCadReserva.Size = new System.Drawing.Size(280, 35);
+            this.btnCadReserva.TabIndex = 11;
+            this.btnCadReserva.Text = "Cadastrar Reserva";
+            this.btnCadReserva.UseVisualStyleBackColor = true;
+            this.btnCadReserva.Click += new System.EventHandler(this.btnCadReserva_Click);
             // 
             // btnListReserva
             // 
@@ -303,7 +304,7 @@ namespace HotelDreamDesktop
         private System.Windows.Forms.Button btnListFuncionario;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnCadReserva;
         private System.Windows.Forms.Button btnListReserva;
         private System.Windows.Forms.Button btnCadHospede;
         private System.Windows.Forms.PictureBox pictureBox1;

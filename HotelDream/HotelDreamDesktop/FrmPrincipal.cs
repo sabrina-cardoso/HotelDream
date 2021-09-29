@@ -71,6 +71,11 @@ namespace HotelDreamDesktop
 
         private void btnListReserva_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnCadReserva_Click(object sender, EventArgs e)
+        {
             CloseForms();
             VisibleForm(formCadReserva);
         }
