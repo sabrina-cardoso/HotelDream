@@ -61,7 +61,7 @@ namespace HotelDreamLib.Dao
                 foreach (DataRow linha in dt.Rows)
                 {
                     quarto.Id = Convert.ToInt32(linha["ID"]);
-                    quarto.TipoQuarto = GetTipoQuarto(linha["TIPOQUARTO"].ToString());
+                    quarto.TipoQuarto = GetTipoQuarto(linha["TIPO_QUARTO"].ToString());
                 }
                 return quarto;
             }
@@ -79,7 +79,6 @@ namespace HotelDreamLib.Dao
         {
             try
             {
-                conn.Open();
                 SqlCommand cmd;
                 cmd = new SqlCommand("SELECT * FROM TB_QUARTO_TIPO WHERE ID=" + id)
                 {
@@ -97,9 +96,9 @@ namespace HotelDreamLib.Dao
 
                     tipoQuarto.Id = Convert.ToInt32(linha["ID"]);
                     tipoQuarto.Nome = linha["NOME"].ToString();
-                    tipoQuarto.QtdHospede = int.Parse(linha["QTDHOSPEDE"].ToString());
-                    tipoQuarto.QtdCamaSolteiro = int.Parse(linha["QTDCAMASOLTEIRO"].ToString());
-                    tipoQuarto.QtdCamaCasal = int.Parse(linha["QTDCAMACASAL"].ToString());
+                    tipoQuarto.QtdHospede = int.Parse(linha["QTD_HOSPEDE"].ToString());
+                    tipoQuarto.QtdCamaSolteiro = int.Parse(linha["QTD_CAMA_SOLTEIRO"].ToString());
+                    tipoQuarto.QtdCamaCasal = int.Parse(linha["QTD_CAMA_CASAL"].ToString());
                     tipoQuarto.Foto = linha["FOTO"].ToString();
                     tipoQuarto.Descricao = linha["DESCRICAO"].ToString();
                     tipoQuarto.Valor = Convert.ToDouble(linha["VALOR"]);

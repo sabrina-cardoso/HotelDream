@@ -17,6 +17,8 @@ namespace HotelDreamDesktop
         FrmCadastrarFuncionario formCadFunc = new FrmCadastrarFuncionario();
         FrmListaFuncionario formListFunc = new FrmListaFuncionario();
         FrmCadastrarReserva formCadReserva = new FrmCadastrarReserva();
+        FrmListaReserva formListReserv = new FrmListaReserva();
+        FrmRelatorioAvaliacao formAvaliacao = new FrmRelatorioAvaliacao();
 
         public FrmPrincipal()
         {
@@ -71,13 +73,20 @@ namespace HotelDreamDesktop
 
         private void btnListReserva_Click(object sender, EventArgs e)
         {
-
+            CloseForms();
+            VisibleForm(formListReserv);
         }
 
         private void btnCadReserva_Click(object sender, EventArgs e)
         {
             CloseForms();
             VisibleForm(formCadReserva);
+        }
+
+        private void btnRelatorioAva_Click(object sender, EventArgs e)
+        {
+            CloseForms();
+            VisibleForm(formAvaliacao);
         }
     }
 }

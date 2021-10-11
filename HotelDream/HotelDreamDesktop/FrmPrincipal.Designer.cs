@@ -34,7 +34,7 @@ namespace HotelDreamDesktop
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
+            this.btnRelatorioAva = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
             this.btnCadFuncionario = new System.Windows.Forms.Button();
             this.btnListFuncionario = new System.Windows.Forms.Button();
@@ -77,7 +77,7 @@ namespace HotelDreamDesktop
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Controls.Add(this.button11);
-            this.panel3.Controls.Add(this.button12);
+            this.panel3.Controls.Add(this.btnRelatorioAva);
             this.panel3.Controls.Add(this.button13);
             this.panel3.Controls.Add(this.btnCadFuncionario);
             this.panel3.Controls.Add(this.btnListFuncionario);
@@ -108,19 +108,20 @@ namespace HotelDreamDesktop
             this.button11.Text = "Lista de Usuários";
             this.button11.UseVisualStyleBackColor = true;
             // 
-            // button12
+            // btnRelatorioAva
             // 
-            this.button12.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button12.FlatAppearance.BorderSize = 2;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.button12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button12.Location = new System.Drawing.Point(9, 471);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(280, 35);
-            this.button12.TabIndex = 17;
-            this.button12.Text = "Relátorio de Avaliações";
-            this.button12.UseVisualStyleBackColor = true;
+            this.btnRelatorioAva.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnRelatorioAva.FlatAppearance.BorderSize = 2;
+            this.btnRelatorioAva.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRelatorioAva.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnRelatorioAva.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnRelatorioAva.Location = new System.Drawing.Point(9, 471);
+            this.btnRelatorioAva.Name = "btnRelatorioAva";
+            this.btnRelatorioAva.Size = new System.Drawing.Size(280, 35);
+            this.btnRelatorioAva.TabIndex = 17;
+            this.btnRelatorioAva.Text = "Relátorio de Avaliações";
+            this.btnRelatorioAva.UseVisualStyleBackColor = true;
+            this.btnRelatorioAva.Click += new System.EventHandler(this.btnRelatorioAva_Click);
             // 
             // button13
             // 
@@ -298,7 +299,7 @@ namespace HotelDreamDesktop
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button btnRelatorioAva;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button btnCadFuncionario;
         private System.Windows.Forms.Button btnListFuncionario;

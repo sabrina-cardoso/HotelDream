@@ -17,5 +17,6 @@ namespace HotelDreamLib.Model
         public DateTime Checkout { get; set; }
         public int TipoPagamento { get; set; }
         public double Total { get; set; }
+        public int QtdAcompanhante { get; set; }
     }
 }

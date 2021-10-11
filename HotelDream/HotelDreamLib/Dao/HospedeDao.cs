@@ -94,7 +94,7 @@ namespace HotelDreamLib.Dao
                     hospedeModel.Nome = linha["NOME"].ToString();
                     hospedeModel.CPF = linha["CPF"].ToString();
                     hospedeModel.RG = linha["RG"].ToString();
-                    hospedeModel.DataNasc = Convert.ToDateTime(linha["DATANASC"]);
+                    hospedeModel.DataNasc = Convert.ToDateTime(linha["DATA_NASCIMENTO"]);
                     hospedeModel.Telefone = linha["TELEFONE"].ToString();
                     hospedeModel.Email = linha["EMAIL"].ToString();
                 }

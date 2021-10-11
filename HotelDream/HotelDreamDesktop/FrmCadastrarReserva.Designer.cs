@@ -49,6 +49,8 @@ namespace HotelDreamDesktop
             this.dgvHospede = new System.Windows.Forms.DataGridView();
             this.colReservHospede = new System.Windows.Forms.DataGridViewImageColumn();
             this.tabReserva = new System.Windows.Forms.TabPage();
+            this.numAcompanhante = new System.Windows.Forms.NumericUpDown();
+            this.label16 = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.btnConfReserva = new System.Windows.Forms.Button();
@@ -66,15 +68,14 @@ namespace HotelDreamDesktop
             this.txtQuarto = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.tabAcompanhante = new System.Windows.Forms.TabPage();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnFinalizar = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtCpfAcomp = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtNomeAcomp = new System.Windows.Forms.TextBox();
+            this.btnAddAcomp = new System.Windows.Forms.Button();
             this.dgvAcompanhante = new System.Windows.Forms.DataGridView();
-            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvQuarto)).BeginInit();
             this.tabControl.SuspendLayout();
@@ -82,6 +83,7 @@ namespace HotelDreamDesktop
             this.tabHospede.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHospede)).BeginInit();
             this.tabReserva.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numAcompanhante)).BeginInit();
             this.tabAcompanhante.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAcompanhante)).BeginInit();
             this.SuspendLayout();
@@ -304,6 +306,8 @@ namespace HotelDreamDesktop
             // 
             // tabReserva
             // 
+            this.tabReserva.Controls.Add(this.numAcompanhante);
+            this.tabReserva.Controls.Add(this.label16);
             this.tabReserva.Controls.Add(this.lblTotal);
             this.tabReserva.Controls.Add(this.label15);
             this.tabReserva.Controls.Add(this.btnConfReserva);
@@ -328,15 +332,33 @@ namespace HotelDreamDesktop
             this.tabReserva.Text = "Resumo da Reserva";
             this.tabReserva.UseVisualStyleBackColor = true;
             // 
+            // numAcompanhante
+            // 
+            this.numAcompanhante.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numAcompanhante.Location = new System.Drawing.Point(452, 170);
+            this.numAcompanhante.Name = "numAcompanhante";
+            this.numAcompanhante.Size = new System.Drawing.Size(263, 26);
+            this.numAcompanhante.TabIndex = 52;
+            this.numAcompanhante.Leave += new System.EventHandler(this.numAcompanhante_Leave);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.label16.Location = new System.Drawing.Point(448, 145);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(219, 20);
+            this.label16.TabIndex = 51;
+            this.label16.Text = "Quantidade de Acompanhantes";
+            // 
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
             this.lblTotal.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotal.Location = new System.Drawing.Point(811, 244);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(42, 25);
+            this.lblTotal.Size = new System.Drawing.Size(0, 25);
             this.lblTotal.TabIndex = 49;
-            this.lblTotal.Text = "000";
             // 
             // label15
             // 
@@ -368,7 +390,7 @@ namespace HotelDreamDesktop
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.label11.Location = new System.Drawing.Point(622, 145);
+            this.label11.Location = new System.Drawing.Point(717, 147);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(139, 20);
             this.label11.TabIndex = 45;
@@ -378,9 +400,9 @@ namespace HotelDreamDesktop
             // 
             this.comboPagamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.comboPagamento.FormattingEnabled = true;
-            this.comboPagamento.Location = new System.Drawing.Point(621, 168);
+            this.comboPagamento.Location = new System.Drawing.Point(721, 168);
             this.comboPagamento.Name = "comboPagamento";
-            this.comboPagamento.Size = new System.Drawing.Size(520, 28);
+            this.comboPagamento.Size = new System.Drawing.Size(420, 28);
             this.comboPagamento.TabIndex = 44;
             // 
             // dateSaidaReserv
@@ -388,9 +410,9 @@ namespace HotelDreamDesktop
             this.dateSaidaReserv.Enabled = false;
             this.dateSaidaReserv.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.dateSaidaReserv.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateSaidaReserv.Location = new System.Drawing.Point(322, 170);
+            this.dateSaidaReserv.Location = new System.Drawing.Point(237, 170);
             this.dateSaidaReserv.Name = "dateSaidaReserv";
-            this.dateSaidaReserv.Size = new System.Drawing.Size(293, 26);
+            this.dateSaidaReserv.Size = new System.Drawing.Size(206, 26);
             this.dateSaidaReserv.TabIndex = 43;
             // 
             // dateEntradaReserv
@@ -400,14 +422,14 @@ namespace HotelDreamDesktop
             this.dateEntradaReserv.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateEntradaReserv.Location = new System.Drawing.Point(23, 170);
             this.dateEntradaReserv.Name = "dateEntradaReserv";
-            this.dateEntradaReserv.Size = new System.Drawing.Size(293, 26);
+            this.dateEntradaReserv.Size = new System.Drawing.Size(206, 26);
             this.dateEntradaReserv.TabIndex = 42;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.label9.Location = new System.Drawing.Point(320, 147);
+            this.label9.Location = new System.Drawing.Point(233, 147);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(103, 20);
             this.label9.TabIndex = 41;
@@ -427,7 +449,7 @@ namespace HotelDreamDesktop
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.label8.Location = new System.Drawing.Point(622, 72);
+            this.label8.Location = new System.Drawing.Point(717, 72);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(69, 20);
             this.label8.TabIndex = 37;
@@ -437,9 +459,9 @@ namespace HotelDreamDesktop
             // 
             this.txtHospede.Enabled = false;
             this.txtHospede.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtHospede.Location = new System.Drawing.Point(621, 95);
+            this.txtHospede.Location = new System.Drawing.Point(721, 95);
             this.txtHospede.Name = "txtHospede";
-            this.txtHospede.Size = new System.Drawing.Size(520, 26);
+            this.txtHospede.Size = new System.Drawing.Size(420, 26);
             this.txtHospede.TabIndex = 36;
             // 
             // label6
@@ -458,7 +480,7 @@ namespace HotelDreamDesktop
             this.txtTipoQuarto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtTipoQuarto.Location = new System.Drawing.Point(322, 95);
             this.txtTipoQuarto.Name = "txtTipoQuarto";
-            this.txtTipoQuarto.Size = new System.Drawing.Size(293, 26);
+            this.txtTipoQuarto.Size = new System.Drawing.Size(393, 26);
             this.txtTipoQuarto.TabIndex = 34;
             // 
             // label7
@@ -493,13 +515,13 @@ namespace HotelDreamDesktop
             // 
             // tabAcompanhante
             // 
-            this.tabAcompanhante.Controls.Add(this.button2);
+            this.tabAcompanhante.Controls.Add(this.btnFinalizar);
             this.tabAcompanhante.Controls.Add(this.label14);
-            this.tabAcompanhante.Controls.Add(this.textBox2);
+            this.tabAcompanhante.Controls.Add(this.txtCpfAcomp);
             this.tabAcompanhante.Controls.Add(this.label13);
             this.tabAcompanhante.Controls.Add(this.label12);
-            this.tabAcompanhante.Controls.Add(this.textBox1);
-            this.tabAcompanhante.Controls.Add(this.button1);
+            this.tabAcompanhante.Controls.Add(this.txtNomeAcomp);
+            this.tabAcompanhante.Controls.Add(this.btnAddAcomp);
             this.tabAcompanhante.Controls.Add(this.dgvAcompanhante);
             this.tabAcompanhante.Location = new System.Drawing.Point(4, 22);
             this.tabAcompanhante.Name = "tabAcompanhante";
@@ -509,20 +531,20 @@ namespace HotelDreamDesktop
             this.tabAcompanhante.Text = "Acompanhantes";
             this.tabAcompanhante.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnFinalizar
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button2.FlatAppearance.BorderSize = 2;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(948, 436);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(200, 38);
-            this.button2.TabIndex = 47;
-            this.button2.Text = "Finalizar Reserva";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnFinalizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnFinalizar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnFinalizar.FlatAppearance.BorderSize = 2;
+            this.btnFinalizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFinalizar.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnFinalizar.ForeColor = System.Drawing.Color.White;
+            this.btnFinalizar.Location = new System.Drawing.Point(948, 436);
+            this.btnFinalizar.Name = "btnFinalizar";
+            this.btnFinalizar.Size = new System.Drawing.Size(200, 38);
+            this.btnFinalizar.TabIndex = 47;
+            this.btnFinalizar.Text = "Finalizar Reserva";
+            this.btnFinalizar.UseVisualStyleBackColor = false;
             // 
             // label14
             // 
@@ -534,13 +556,13 @@ namespace HotelDreamDesktop
             this.label14.TabIndex = 36;
             this.label14.Text = "CPF:";
             // 
-            // textBox2
+            // txtCpfAcomp
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox2.Location = new System.Drawing.Point(555, 123);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(361, 26);
-            this.textBox2.TabIndex = 35;
+            this.txtCpfAcomp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtCpfAcomp.Location = new System.Drawing.Point(555, 123);
+            this.txtCpfAcomp.Name = "txtCpfAcomp";
+            this.txtCpfAcomp.Size = new System.Drawing.Size(361, 26);
+            this.txtCpfAcomp.TabIndex = 35;
             // 
             // label13
             // 
@@ -563,28 +585,29 @@ namespace HotelDreamDesktop
             this.label12.TabIndex = 30;
             this.label12.Text = "Acompanhantes";
             // 
-            // textBox1
+            // txtNomeAcomp
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox1.Location = new System.Drawing.Point(124, 125);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(361, 26);
-            this.textBox1.TabIndex = 28;
+            this.txtNomeAcomp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtNomeAcomp.Location = new System.Drawing.Point(124, 125);
+            this.txtNomeAcomp.Name = "txtNomeAcomp";
+            this.txtNomeAcomp.Size = new System.Drawing.Size(361, 26);
+            this.txtNomeAcomp.TabIndex = 28;
             // 
-            // button1
+            // btnAddAcomp
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button1.FlatAppearance.BorderSize = 2;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(922, 123);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(183, 26);
-            this.button1.TabIndex = 29;
-            this.button1.Text = "Adicionar Acompanhante";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnAddAcomp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnAddAcomp.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnAddAcomp.FlatAppearance.BorderSize = 2;
+            this.btnAddAcomp.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAddAcomp.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.btnAddAcomp.ForeColor = System.Drawing.Color.White;
+            this.btnAddAcomp.Location = new System.Drawing.Point(922, 123);
+            this.btnAddAcomp.Name = "btnAddAcomp";
+            this.btnAddAcomp.Size = new System.Drawing.Size(183, 26);
+            this.btnAddAcomp.TabIndex = 29;
+            this.btnAddAcomp.Text = "Adicionar Acompanhante";
+            this.btnAddAcomp.UseVisualStyleBackColor = false;
+            this.btnAddAcomp.Click += new System.EventHandler(this.btnAddAcomp_Click);
             // 
             // dgvAcompanhante
             // 
@@ -593,23 +616,12 @@ namespace HotelDreamDesktop
             this.dgvAcompanhante.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvAcompanhante.BackgroundColor = System.Drawing.Color.White;
             this.dgvAcompanhante.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAcompanhante.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewImageColumn1});
             this.dgvAcompanhante.Location = new System.Drawing.Point(12, 157);
             this.dgvAcompanhante.Name = "dgvAcompanhante";
             this.dgvAcompanhante.ReadOnly = true;
             this.dgvAcompanhante.RowTemplate.Height = 25;
             this.dgvAcompanhante.Size = new System.Drawing.Size(1136, 257);
             this.dgvAcompanhante.TabIndex = 27;
-            // 
-            // dataGridViewImageColumn1
-            // 
-            this.dataGridViewImageColumn1.HeaderText = "";
-            this.dataGridViewImageColumn1.Image = ((System.Drawing.Image)(resources.GetObject("dataGridViewImageColumn1.Image")));
-            this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
-            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            this.dataGridViewImageColumn1.ReadOnly = true;
-            this.dataGridViewImageColumn1.ToolTipText = "Editar";
             // 
             // FrmCadastrarReserva
             // 
@@ -633,6 +645,7 @@ namespace HotelDreamDesktop
             ((System.ComponentModel.ISupportInitialize)(this.dgvHospede)).EndInit();
             this.tabReserva.ResumeLayout(false);
             this.tabReserva.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numAcompanhante)).EndInit();
             this.tabAcompanhante.ResumeLayout(false);
             this.tabAcompanhante.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAcompanhante)).EndInit();
@@ -676,16 +689,17 @@ namespace HotelDreamDesktop
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ComboBox comboPagamento;
         private System.Windows.Forms.Button btnConfReserva;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnFinalizar;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtCpfAcomp;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtNomeAcomp;
+        private System.Windows.Forms.Button btnAddAcomp;
         private System.Windows.Forms.DataGridView dgvAcompanhante;
-        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.NumericUpDown numAcompanhante;
     }
 }

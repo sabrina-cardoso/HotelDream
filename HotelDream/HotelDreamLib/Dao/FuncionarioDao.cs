@@ -99,12 +99,12 @@ namespace HotelDreamLib.Dao
                     funcionario.Nome = linha["NOME"].ToString();
                     funcionario.CPF = linha["CPF"].ToString();
                     funcionario.RG = linha["RG"].ToString();
-                    funcionario.DataNasc = Convert.ToDateTime(linha["DATANASC"]);
+                    funcionario.DataNasc = Convert.ToDateTime(linha["DATA_NASCIMENO"]);
                     funcionario.Telefone = linha["TELEFONE"].ToString();
                     funcionario.Setor = Convert.ToInt32(linha["SETOR"]);
                     funcionario.Situacao = Convert.ToInt32(linha["SITUACAO"]);
-                    funcionario.DataAdm = Convert.ToDateTime(linha["DATAADM"]);
-                    funcionario.DataDem = linha["DATADEM"] != DBNull.Value ? Convert.ToDateTime(linha["DATADEM"]) : Convert.ToDateTime("01/01/9998");
+                    funcionario.DataAdm = Convert.ToDateTime(linha["DATA_ADMI"]);
+                    funcionario.DataDem = linha["DATA_DEMI"] != DBNull.Value ? Convert.ToDateTime(linha["DATA_DEMI"]) : Convert.ToDateTime("01/01/9998");
                     funcionario.Salario = Convert.ToDouble(linha["SALARIO"]);
                 }
                 return funcionario;

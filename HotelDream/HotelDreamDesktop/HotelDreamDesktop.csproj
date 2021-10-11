@@ -80,6 +80,12 @@
     <Compile Include="FrmListaHospede.Designer.cs">
       <DependentUpon>FrmListaHospede.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmListaReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListaReserva.Designer.cs">
+      <DependentUpon>FrmListaReserva.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,12 @@
     </Compile>
     <Compile Include="FrmPrincipal.Designer.cs">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRelatorioAvaliacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRelatorioAvaliacao.Designer.cs">
+      <DependentUpon>FrmRelatorioAvaliacao.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -109,11 +121,17 @@
     <EmbeddedResource Include="FrmListaHospede.resx">
       <DependentUpon>FrmListaHospede.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmListaReserva.resx">
+      <DependentUpon>FrmListaReserva.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRelatorioAvaliacao.resx">
+      <DependentUpon>FrmRelatorioAvaliacao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
