@@ -26,7 +26,7 @@ namespace HotelDreamLib.Dao
                 cmd.Parameters.Add(new SqlParameter("@ID", usuario.Id));
                 cmd.Parameters.Add(new SqlParameter("@NIVEL", usuario.Nivel));
                 cmd.Parameters.Add(new SqlParameter("@USUARIO", usuario.Usuario));
-                cmd.Parameters.Add(new SqlParameter("@SENHA", usuario.Senha));
+                cmd.Parameters.Add(new SqlParameter("@SENHA", !String.IsNullOrEmpty(usuario.Senha) ? usuario.Senha : ""));
                 cmd.Parameters.Add(new SqlParameter("@STATUS", usuario.Status));
                 cmd.ExecuteNonQuery();
 
@@ -42,13 +42,78 @@ namespace HotelDreamLib.Dao
             }
         }
 
-        public object GetStatus()
+        public UsuarioModel GetUsuario(string id)
+        {
+            try
+            {
+                conn.Open();
+                SqlCommand cmd;
+                cmd = new SqlCommand("SELECT * FROM TB_USUARIO WHERE ID=" + id)
+                {
+                    CommandType = CommandType.Text,
+                    Connection = conn
+                };
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                UsuarioModel usuario = new UsuarioModel();
+
+                foreach (DataRow linha in dt.Rows)
+                {
+                    usuario.Id = Convert.ToInt32(linha["ID"]);
+                    usuario.Usuario = linha["USUARIO"].ToString();
+                    usuario.Nivel = Convert.ToInt32(linha["NIVEL"]);
+                    usuario.Status = Convert.ToInt32(linha["STATUS"]);
+                }
+                return usuario;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        public DataTable GetStatus()
         {
             try
             {
                 conn.Open();
                 SqlCommand cmd;
                 cmd = new SqlCommand("SELECT * FROM TB_STATUS_USUARIO")
+                {
+                    CommandType = CommandType.Text,
+                    Connection = conn
+                };
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                return dt;
+
+
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        public DataTable GetNivelAcesso()
+        {
+            try
+            {
+                conn.Open();
+                SqlCommand cmd;
+                cmd = new SqlCommand("SELECT * FROM TB_NIVEL_ACESSO")
                 {
                     CommandType = CommandType.Text,
                     Connection = conn

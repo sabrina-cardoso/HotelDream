@@ -14,5 +14,7 @@ namespace HotelDreamLib.Business
             int qtdDias = reserva.DtSaida.Subtract(reserva.DtEntrada).Days;
             return (reserva.Quarto.TipoQuarto.Valor * qtdDias) + (reserva.QtdAcompanhante * 70);
         }
+
+        
     }
 }

@@ -33,13 +33,10 @@ namespace HotelDreamDesktop
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button11 = new System.Windows.Forms.Button();
+            this.btnListUsuario = new System.Windows.Forms.Button();
             this.btnRelatorioAva = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
             this.btnCadFuncionario = new System.Windows.Forms.Button();
             this.btnListFuncionario = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
             this.btnCadReserva = new System.Windows.Forms.Button();
             this.btnListReserva = new System.Windows.Forms.Button();
             this.btnCadHospede = new System.Windows.Forms.Button();
@@ -76,13 +73,10 @@ namespace HotelDreamDesktop
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.button11);
+            this.panel3.Controls.Add(this.btnListUsuario);
             this.panel3.Controls.Add(this.btnRelatorioAva);
-            this.panel3.Controls.Add(this.button13);
             this.panel3.Controls.Add(this.btnCadFuncionario);
             this.panel3.Controls.Add(this.btnListFuncionario);
-            this.panel3.Controls.Add(this.button7);
-            this.panel3.Controls.Add(this.button8);
             this.panel3.Controls.Add(this.btnCadReserva);
             this.panel3.Controls.Add(this.btnListReserva);
             this.panel3.Controls.Add(this.btnCadHospede);
@@ -94,19 +88,20 @@ namespace HotelDreamDesktop
             this.panel3.Size = new System.Drawing.Size(298, 629);
             this.panel3.TabIndex = 8;
             // 
-            // button11
+            // btnListUsuario
             // 
-            this.button11.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button11.FlatAppearance.BorderSize = 2;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.button11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button11.Location = new System.Drawing.Point(9, 513);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(280, 35);
-            this.button11.TabIndex = 18;
-            this.button11.Text = "Lista de Usuários";
-            this.button11.UseVisualStyleBackColor = true;
+            this.btnListUsuario.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnListUsuario.FlatAppearance.BorderSize = 2;
+            this.btnListUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnListUsuario.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnListUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnListUsuario.Location = new System.Drawing.Point(9, 376);
+            this.btnListUsuario.Name = "btnListUsuario";
+            this.btnListUsuario.Size = new System.Drawing.Size(280, 35);
+            this.btnListUsuario.TabIndex = 18;
+            this.btnListUsuario.Text = "Lista de Usuários";
+            this.btnListUsuario.UseVisualStyleBackColor = true;
+            this.btnListUsuario.Click += new System.EventHandler(this.btnListUsuario_Click);
             // 
             // btnRelatorioAva
             // 
@@ -115,27 +110,13 @@ namespace HotelDreamDesktop
             this.btnRelatorioAva.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRelatorioAva.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnRelatorioAva.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.btnRelatorioAva.Location = new System.Drawing.Point(9, 471);
+            this.btnRelatorioAva.Location = new System.Drawing.Point(9, 334);
             this.btnRelatorioAva.Name = "btnRelatorioAva";
             this.btnRelatorioAva.Size = new System.Drawing.Size(280, 35);
             this.btnRelatorioAva.TabIndex = 17;
             this.btnRelatorioAva.Text = "Relátorio de Avaliações";
             this.btnRelatorioAva.UseVisualStyleBackColor = true;
             this.btnRelatorioAva.Click += new System.EventHandler(this.btnRelatorioAva_Click);
-            // 
-            // button13
-            // 
-            this.button13.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button13.FlatAppearance.BorderSize = 2;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.button13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button13.Location = new System.Drawing.Point(9, 427);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(280, 35);
-            this.button13.TabIndex = 16;
-            this.button13.Text = "Relátorios Financeiros";
-            this.button13.UseVisualStyleBackColor = true;
             // 
             // btnCadFuncionario
             // 
@@ -144,7 +125,7 @@ namespace HotelDreamDesktop
             this.btnCadFuncionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadFuncionario.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnCadFuncionario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.btnCadFuncionario.Location = new System.Drawing.Point(9, 383);
+            this.btnCadFuncionario.Location = new System.Drawing.Point(9, 293);
             this.btnCadFuncionario.Name = "btnCadFuncionario";
             this.btnCadFuncionario.Size = new System.Drawing.Size(280, 35);
             this.btnCadFuncionario.TabIndex = 15;
@@ -159,41 +140,13 @@ namespace HotelDreamDesktop
             this.btnListFuncionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnListFuncionario.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnListFuncionario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.btnListFuncionario.Location = new System.Drawing.Point(9, 340);
+            this.btnListFuncionario.Location = new System.Drawing.Point(9, 250);
             this.btnListFuncionario.Name = "btnListFuncionario";
             this.btnListFuncionario.Size = new System.Drawing.Size(280, 35);
             this.btnListFuncionario.TabIndex = 14;
             this.btnListFuncionario.Text = "Lista de Funcionários";
             this.btnListFuncionario.UseVisualStyleBackColor = true;
             this.btnListFuncionario.Click += new System.EventHandler(this.btnListFuncionario_Click);
-            // 
-            // button7
-            // 
-            this.button7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button7.FlatAppearance.BorderSize = 2;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button7.Location = new System.Drawing.Point(9, 297);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(280, 35);
-            this.button7.TabIndex = 13;
-            this.button7.Text = "Cadastrar Produto";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button8.FlatAppearance.BorderSize = 2;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.button8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button8.Location = new System.Drawing.Point(9, 254);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(280, 35);
-            this.button8.TabIndex = 12;
-            this.button8.Text = "Lista de Produtos";
-            this.button8.UseVisualStyleBackColor = true;
             // 
             // btnCadReserva
             // 
@@ -298,13 +251,10 @@ namespace HotelDreamDesktop
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button btnListUsuario;
         private System.Windows.Forms.Button btnRelatorioAva;
-        private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button btnCadFuncionario;
         private System.Windows.Forms.Button btnListFuncionario;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button btnCadReserva;
         private System.Windows.Forms.Button btnListReserva;
         private System.Windows.Forms.Button btnCadHospede;

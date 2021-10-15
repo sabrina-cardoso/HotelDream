@@ -19,7 +19,7 @@ namespace HotelDreamDesktop
         FrmCadastrarReserva formCadReserva = new FrmCadastrarReserva();
         FrmListaReserva formListReserv = new FrmListaReserva();
         FrmRelatorioAvaliacao formAvaliacao = new FrmRelatorioAvaliacao();
-
+        FrmListaUsuario formUsuario = new FrmListaUsuario();
         public FrmPrincipal()
         {
             InitializeComponent();
@@ -45,6 +45,10 @@ namespace HotelDreamDesktop
             formListaHospede.Visible = false;
             formCadFunc.Visible = false;
             formListFunc.Visible = false;
+            formCadReserva.Visible = false;
+            formListReserv.Visible = false;
+            formAvaliacao.Visible = false;
+            formUsuario.Visible = false;
         }
 
         private void VisibleForm(Form form)
@@ -87,6 +91,12 @@ namespace HotelDreamDesktop
         {
             CloseForms();
             VisibleForm(formAvaliacao);
+        }
+
+        private void btnListUsuario_Click(object sender, EventArgs e)
+        {
+            CloseForms();
+            VisibleForm(formUsuario);
         }
     }
 }

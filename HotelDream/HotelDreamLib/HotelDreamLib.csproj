@@ -63,6 +63,7 @@
     <Compile Include="Model\FuncionarioModel.cs" />
     <Compile Include="Model\HospedeModel.cs" />
     <Compile Include="Model\LoginModel.cs" />
+    <Compile Include="Model\NotaModel.cs" />
     <Compile Include="Model\ProdutoCategoriaModel.cs" />
     <Compile Include="Model\ProdutoModel.cs" />
     <Compile Include="Model\QuartoModel.cs" />
