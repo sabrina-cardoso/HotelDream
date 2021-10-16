@@ -22,6 +22,14 @@ namespace HotelDreamDesktop
             lblSenhaErro.Visible = false;
         }
 
+        private void FrmCadastrarHospede_Load(object sender, EventArgs e)
+        {
+            comboStatus.DisplayMember = "STATUS_DESC";
+            comboStatus.ValueMember = "ID";
+            comboStatus.DataSource = usuarioDao.GetStatus();
+            comboStatus.SelectedItem = null;
+        }
+
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
             if (ValidarCampos()) {
@@ -51,38 +59,25 @@ namespace HotelDreamDesktop
                 enderecoDao.SetEndereco(enderecoModel);
 
                 MsgSucesso();
+                LimparCampos();
             }  
         }
 
         private void txtCep_Leave(object sender, EventArgs e)
         {
-            HotelDreamLib.Services.Correios buscaCep = new HotelDreamLib.Services.Correios();
-            var retorno = buscaCep.BuscarCep(txtCep.Text);
-
-            txtEstado.Text = retorno.Estado;
-            txtCidade.Text = retorno.Cidade;
-            txtBairro.Text = retorno.Bairro;
-            txtRua.Text = retorno.Rua;
-        }
-
-        private void MsgSucesso()
-        {
-
-            string msg = "Cadastro realizado com sucesso!";
-            string title = "";
-            DialogResult result = MessageBox.Show(msg, title, MessageBoxButtons.OK, MessageBoxIcon.None);
-
-            if (result == DialogResult.OK)
+            try
             {
-                this.Hide();
+                HotelDreamLib.Services.Correios buscaCep = new HotelDreamLib.Services.Correios();
+                var retorno = buscaCep.BuscarCep(txtCep.Text);
+                txtEstado.Text = retorno.Estado;
+                txtCidade.Text = retorno.Cidade;
+                txtBairro.Text = retorno.Bairro;
+                txtRua.Text = retorno.Rua;
             }
-        }
-
-        private void MsgErro(string msg)
-        {
-            string title = "";
-            DialogResult result = MessageBox.Show(msg, title, MessageBoxButtons.OK, MessageBoxIcon.Error);
-
+            catch (Exception ex)
+            {
+                MsgErro(ex.Message);
+            }       
         }
 
         private bool ValidarCampos()
@@ -110,12 +105,45 @@ namespace HotelDreamDesktop
             }
         }
 
-        private void FrmCadastrarHospede_Load(object sender, EventArgs e)
+        private void LimparCampos()
         {
-            comboStatus.DisplayMember = "STATUS_DESC";
-            comboStatus.ValueMember = "ID";
-            comboStatus.DataSource = usuarioDao.GetStatus();
-            comboStatus.SelectedItem = null;
+            txtNome.Text = "";
+            txtCpf.Text = "";
+            txtRg.Text = "";
+            txtTelefone.Text = "";
+            txtEmail.Text = "";
+            txtCep.Text = "";
+            txtEstado.Text = "";
+            txtCidade.Text = "";
+            txtBairro.Text = "";
+            txtRua.Text = "";
+            txtNumero.Text = "";
+            txtComplemento.Text = "";
+            txtUsuario.Text = "";
+            comboStatus.Text = "";
+            txtSenha.Text = "";
+            txtConfSenha.Text = "";
+
+        }
+
+        private void MsgSucesso()
+        {
+
+            string msg = "Cadastro realizado com sucesso!";
+            string title = "";
+            DialogResult result = MessageBox.Show(msg, title, MessageBoxButtons.OK, MessageBoxIcon.None);
+
+            if (result == DialogResult.OK)
+            {
+                this.Hide();
+            }
+        }
+
+        private void MsgErro(string msg)
+        {
+            string title = "";
+            DialogResult result = MessageBox.Show(msg, title, MessageBoxButtons.OK, MessageBoxIcon.Error);
+
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using Correios;
 using HotelDreamLib.Model;
+using System;
 
 namespace HotelDreamLib.Services
 {

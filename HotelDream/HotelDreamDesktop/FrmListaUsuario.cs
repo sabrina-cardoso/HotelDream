@@ -29,7 +29,7 @@ namespace HotelDreamDesktop
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            usuarioDao.GetListUsuario(txtBusca.Text);
+            dgvUsuario.DataSource = usuarioDao.GetListUsuario(txtBusca.Text);
         }
 
         private void dgvUsuario_CellContentClick(object sender, DataGridViewCellEventArgs e)

@@ -58,5 +58,10 @@ namespace HotelDreamDesktop
                 this.Hide();
             }
         }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            dgvReserva.DataSource = reservaDao.GetListReserva(txtBusca.Text);
+        }
     }
 }

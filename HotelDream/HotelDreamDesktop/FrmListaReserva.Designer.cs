@@ -32,11 +32,11 @@ namespace HotelDreamDesktop
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmListaReserva));
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabLista = new System.Windows.Forms.TabPage();
+            this.txtBusca = new System.Windows.Forms.TextBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label20 = new System.Windows.Forms.Label();
-            this.dgvReserva = new System.Windows.Forms.DataGridView();
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.txtBusca = new System.Windows.Forms.TextBox();
+            this.dgvReserva = new System.Windows.Forms.DataGridView();
             this.colCheckIn = new System.Windows.Forms.DataGridViewImageColumn();
             this.colCheckOut = new System.Windows.Forms.DataGridViewImageColumn();
             this.tabControl.SuspendLayout();
@@ -68,6 +68,14 @@ namespace HotelDreamDesktop
             this.tabLista.Text = "Lista";
             this.tabLista.UseVisualStyleBackColor = true;
             // 
+            // txtBusca
+            // 
+            this.txtBusca.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtBusca.Location = new System.Drawing.Point(182, 58);
+            this.txtBusca.Name = "txtBusca";
+            this.txtBusca.Size = new System.Drawing.Size(699, 26);
+            this.txtBusca.TabIndex = 20;
+            // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -88,6 +96,22 @@ namespace HotelDreamDesktop
             this.label20.TabIndex = 11;
             this.label20.Text = "Lista de Reserva";
             // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnBuscar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnBuscar.FlatAppearance.BorderSize = 2;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnBuscar.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.btnBuscar.ForeColor = System.Drawing.Color.White;
+            this.btnBuscar.Location = new System.Drawing.Point(887, 58);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(73, 26);
+            this.btnBuscar.TabIndex = 22;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
             // dgvReserva
             // 
             this.dgvReserva.AllowUserToAddRows = false;
@@ -105,29 +129,6 @@ namespace HotelDreamDesktop
             this.dgvReserva.Size = new System.Drawing.Size(1136, 445);
             this.dgvReserva.TabIndex = 0;
             this.dgvReserva.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvReserva_CellContentClick);
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.btnBuscar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.btnBuscar.FlatAppearance.BorderSize = 2;
-            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnBuscar.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.btnBuscar.ForeColor = System.Drawing.Color.White;
-            this.btnBuscar.Location = new System.Drawing.Point(887, 58);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(73, 26);
-            this.btnBuscar.TabIndex = 22;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = false;
-            // 
-            // txtBusca
-            // 
-            this.txtBusca.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtBusca.Location = new System.Drawing.Point(182, 58);
-            this.txtBusca.Name = "txtBusca";
-            this.txtBusca.Size = new System.Drawing.Size(699, 26);
-            this.txtBusca.TabIndex = 20;
             // 
             // colCheckIn
             // 

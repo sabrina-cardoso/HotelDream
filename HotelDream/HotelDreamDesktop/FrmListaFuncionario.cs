@@ -139,5 +139,9 @@ namespace HotelDreamDesktop
             return false;
         }
 
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            dgvFuncionario.DataSource = funcionarioDao.GetListFuncionario(txtBusca.Text);
+        }
     }
 }

@@ -50,5 +50,10 @@ namespace HotelDreamDesktop
             lblRecoMedia.Text = notas.NotaRecomendacaoMedia.ToString();
 
         }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            GridAvaliacoes(txtBusca.Text);
+        }
     }
 }

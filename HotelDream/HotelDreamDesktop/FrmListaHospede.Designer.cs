@@ -35,9 +35,10 @@ namespace HotelDreamDesktop
             this.txtBusca = new System.Windows.Forms.TextBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label20 = new System.Windows.Forms.Label();
-            this.btnAtualizar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.dgvHospede = new System.Windows.Forms.DataGridView();
+            this.colEditar = new System.Windows.Forms.DataGridViewImageColumn();
+            this.colExcluir = new System.Windows.Forms.DataGridViewImageColumn();
             this.tabEdicao = new System.Windows.Forms.TabPage();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -73,8 +74,6 @@ namespace HotelDreamDesktop
             this.txtNome = new System.Windows.Forms.TextBox();
             this.txtRg = new System.Windows.Forms.TextBox();
             this.txtCpf = new System.Windows.Forms.TextBox();
-            this.colEditar = new System.Windows.Forms.DataGridViewImageColumn();
-            this.colExcluir = new System.Windows.Forms.DataGridViewImageColumn();
             this.tabControl.SuspendLayout();
             this.tabLista.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -100,7 +99,6 @@ namespace HotelDreamDesktop
             // 
             this.tabLista.Controls.Add(this.txtBusca);
             this.tabLista.Controls.Add(this.panel7);
-            this.tabLista.Controls.Add(this.btnAtualizar);
             this.tabLista.Controls.Add(this.btnBuscar);
             this.tabLista.Controls.Add(this.dgvHospede);
             this.tabLista.Location = new System.Drawing.Point(4, 22);
@@ -139,22 +137,6 @@ namespace HotelDreamDesktop
             this.label20.TabIndex = 11;
             this.label20.Text = "Lista de Hóspedes";
             // 
-            // btnAtualizar
-            // 
-            this.btnAtualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.btnAtualizar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.btnAtualizar.FlatAppearance.BorderSize = 2;
-            this.btnAtualizar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAtualizar.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.btnAtualizar.ForeColor = System.Drawing.Color.White;
-            this.btnAtualizar.Location = new System.Drawing.Point(1069, 80);
-            this.btnAtualizar.Name = "btnAtualizar";
-            this.btnAtualizar.Size = new System.Drawing.Size(79, 26);
-            this.btnAtualizar.TabIndex = 23;
-            this.btnAtualizar.Text = "Atualizar";
-            this.btnAtualizar.UseVisualStyleBackColor = false;
-            this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
-            // 
             // btnBuscar
             // 
             this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -188,6 +170,24 @@ namespace HotelDreamDesktop
             this.dgvHospede.Size = new System.Drawing.Size(1136, 445);
             this.dgvHospede.TabIndex = 0;
             this.dgvHospede.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHospede_CellContentClick);
+            // 
+            // colEditar
+            // 
+            this.colEditar.HeaderText = "";
+            this.colEditar.Image = ((System.Drawing.Image)(resources.GetObject("colEditar.Image")));
+            this.colEditar.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
+            this.colEditar.Name = "colEditar";
+            this.colEditar.ReadOnly = true;
+            this.colEditar.ToolTipText = "Editar";
+            // 
+            // colExcluir
+            // 
+            this.colExcluir.HeaderText = "";
+            this.colExcluir.Image = ((System.Drawing.Image)(resources.GetObject("colExcluir.Image")));
+            this.colExcluir.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
+            this.colExcluir.Name = "colExcluir";
+            this.colExcluir.ReadOnly = true;
+            this.colExcluir.ToolTipText = "Excluir";
             // 
             // tabEdicao
             // 
@@ -555,24 +555,6 @@ namespace HotelDreamDesktop
             this.txtCpf.Size = new System.Drawing.Size(515, 26);
             this.txtCpf.TabIndex = 2;
             // 
-            // colEditar
-            // 
-            this.colEditar.HeaderText = "";
-            this.colEditar.Image = ((System.Drawing.Image)(resources.GetObject("colEditar.Image")));
-            this.colEditar.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
-            this.colEditar.Name = "colEditar";
-            this.colEditar.ReadOnly = true;
-            this.colEditar.ToolTipText = "Editar";
-            // 
-            // colExcluir
-            // 
-            this.colExcluir.HeaderText = "";
-            this.colExcluir.Image = ((System.Drawing.Image)(resources.GetObject("colExcluir.Image")));
-            this.colExcluir.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
-            this.colExcluir.Name = "colExcluir";
-            this.colExcluir.ReadOnly = true;
-            this.colExcluir.ToolTipText = "Excluir";
-            // 
             // FrmListaHospede
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -609,7 +591,6 @@ namespace HotelDreamDesktop
         private System.Windows.Forms.TextBox txtBusca;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Button btnAtualizar;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.DataGridView dgvHospede;
         private System.Windows.Forms.TabPage tabEdicao;

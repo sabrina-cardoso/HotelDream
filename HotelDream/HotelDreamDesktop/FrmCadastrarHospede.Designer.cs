@@ -65,6 +65,8 @@ namespace HotelDreamDesktop
             this.txtCidade = new System.Windows.Forms.TextBox();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label24 = new System.Windows.Forms.Label();
+            this.comboStatus = new System.Windows.Forms.ComboBox();
             this.lblSenhaErro = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.txtSenha = new System.Windows.Forms.TextBox();
@@ -75,8 +77,6 @@ namespace HotelDreamDesktop
             this.panel4 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.label24 = new System.Windows.Forms.Label();
-            this.comboStatus = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -467,6 +467,25 @@ namespace HotelDreamDesktop
             this.panel3.Size = new System.Drawing.Size(1133, 189);
             this.panel3.TabIndex = 20;
             // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.label24.Location = new System.Drawing.Point(572, 50);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(49, 20);
+            this.label24.TabIndex = 32;
+            this.label24.Text = "Status";
+            // 
+            // comboStatus
+            // 
+            this.comboStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.comboStatus.FormattingEnabled = true;
+            this.comboStatus.Location = new System.Drawing.Point(568, 73);
+            this.comboStatus.Name = "comboStatus";
+            this.comboStatus.Size = new System.Drawing.Size(548, 28);
+            this.comboStatus.TabIndex = 31;
+            // 
             // lblSenhaErro
             // 
             this.lblSenhaErro.AutoSize = true;
@@ -491,10 +510,10 @@ namespace HotelDreamDesktop
             // txtSenha
             // 
             this.txtSenha.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.txtSenha.Location = new System.Drawing.Point(23, 128);
+            this.txtSenha.Location = new System.Drawing.Point(22, 128);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '*';
-            this.txtSenha.Size = new System.Drawing.Size(539, 27);
+            this.txtSenha.Size = new System.Drawing.Size(540, 27);
             this.txtSenha.TabIndex = 17;
             // 
             // label11
@@ -520,7 +539,7 @@ namespace HotelDreamDesktop
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.label7.Location = new System.Drawing.Point(22, 50);
+            this.label7.Location = new System.Drawing.Point(21, 50);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(65, 20);
             this.label7.TabIndex = 12;
@@ -529,9 +548,9 @@ namespace HotelDreamDesktop
             // txtUsuario
             // 
             this.txtUsuario.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.txtUsuario.Location = new System.Drawing.Point(29, 73);
+            this.txtUsuario.Location = new System.Drawing.Point(22, 73);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(534, 27);
+            this.txtUsuario.Size = new System.Drawing.Size(541, 27);
             this.txtUsuario.TabIndex = 11;
             // 
             // panel4
@@ -566,25 +585,6 @@ namespace HotelDreamDesktop
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(1167, 737);
             this.panel8.TabIndex = 17;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.label24.Location = new System.Drawing.Point(572, 50);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(49, 20);
-            this.label24.TabIndex = 32;
-            this.label24.Text = "Status";
-            // 
-            // comboStatus
-            // 
-            this.comboStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.comboStatus.FormattingEnabled = true;
-            this.comboStatus.Location = new System.Drawing.Point(568, 73);
-            this.comboStatus.Name = "comboStatus";
-            this.comboStatus.Size = new System.Drawing.Size(548, 28);
-            this.comboStatus.TabIndex = 31;
             // 
             // FrmCadastrarHospede
             // 

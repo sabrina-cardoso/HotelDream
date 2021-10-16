@@ -92,13 +92,21 @@ namespace HotelDreamDesktop
 
         private void txtCep_Leave(object sender, EventArgs e)
         {
-            HotelDreamLib.Services.Correios buscaCep = new HotelDreamLib.Services.Correios();
-            var retorno = buscaCep.BuscarCep(txtCep.Text);
+            try
+            {
+                HotelDreamLib.Services.Correios buscaCep = new HotelDreamLib.Services.Correios();
+                var retorno = buscaCep.BuscarCep(txtCep.Text);
 
-            txtEstado.Text = retorno.Estado;
-            txtCidade.Text = retorno.Cidade;
-            txtBairro.Text = retorno.Bairro;
-            txtRua.Text = retorno.Rua;
+                txtEstado.Text = retorno.Estado;
+                txtCidade.Text = retorno.Cidade;
+                txtBairro.Text = retorno.Bairro;
+                txtRua.Text = retorno.Rua;
+            }
+            catch (Exception ex)
+            {
+                MsgErro(ex.Message);
+            }
+
         }
 
         private void MsgSucesso()

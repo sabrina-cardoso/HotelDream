@@ -545,6 +545,7 @@ namespace HotelDreamDesktop
             this.btnFinalizar.TabIndex = 47;
             this.btnFinalizar.Text = "Finalizar Reserva";
             this.btnFinalizar.UseVisualStyleBackColor = false;
+            this.btnFinalizar.Click += new System.EventHandler(this.btnFinalizar_Click);
             // 
             // label14
             // 

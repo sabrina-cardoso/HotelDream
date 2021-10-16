@@ -98,10 +98,11 @@ namespace HotelDreamDesktop
 
                 if (reserva.QtdAcompanhante > 0)
                 {
-                    tabControl.SelectedIndex = 3;
+                    tabControl.SelectedIndex = 3;            
                 }
                 else{
                     MsgSucesso("Reserva Realizada com sucesso!");
+                    LimparCampos();
                 }
             }
         }
@@ -131,6 +132,24 @@ namespace HotelDreamDesktop
             }
         }
 
+        private void btnAddAcomp_Click(object sender, EventArgs e)
+        {
+            acompanhante.Nome = txtNomeAcomp.Text;
+            acompanhante.CPF = txtCpfAcomp.Text;
+            acompanhante.Reserva = reserva;
+
+            acompanhanteDao.SetAcompanhante(acompanhante);
+
+            dgvAcompanhante.DataSource = acompanhanteDao.GetListAcompanhante(reserva);
+        }
+
+        private void btnFinalizar_Click(object sender, EventArgs e)
+        {
+            MsgSucesso("Reserva realizada com sucesso!");
+            tabControl.SelectedIndex = 0;
+            LimparCampos();
+        }
+
         private void MsgErro(string msg)
         {
             DialogResult result = MessageBox.Show(msg, "", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -141,19 +160,24 @@ namespace HotelDreamDesktop
             DialogResult result = MessageBox.Show(msg, "", MessageBoxButtons.OK, MessageBoxIcon.None);
             if (result == DialogResult.OK)
             {
-                this.Hide();
+                this.Hide();               
             }
         }
 
-        private void btnAddAcomp_Click(object sender, EventArgs e)
+        private void LimparCampos()
         {
-            acompanhante.Nome = txtNomeAcomp.Text;
-            acompanhante.CPF = txtCpfAcomp.Text;
-            acompanhante.Reserva = reserva;
+            txtQuarto.Text = "";
+            txtTipoQuarto.Text = "";
+            txtHospede.Text = "";
+            numAcompanhante.Value = 0;
+            comboPagamento.Text = "";
+            lblTotal.Text = "";
+            txtNomeAcomp.Text = "";
+            txtCpfAcomp.Text = "";
 
-            acompanhanteDao.SetAcompanhante(acompanhante);
+            DataTable dt = new DataTable();
+            dgvAcompanhante.DataSource = dt;
 
-            dgvAcompanhante.DataSource = acompanhanteDao.GetListAcompanhante(reserva);
         }
     }
 }
