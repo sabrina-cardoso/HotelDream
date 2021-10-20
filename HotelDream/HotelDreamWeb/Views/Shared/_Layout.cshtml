@@ -29,12 +29,11 @@
             <div class="navbar-header col-lg-12" style="padding:20px; background-color:white">
                 <img class="center-block" src="~/Images/logo-hotel.jpg" alt="Hotel Dream" width=300 height=60>
             </div>
-            <div class=" collapse col-lg-12 " id="nav">
-                <ul class="nav navbar-nav center-block">
-                    <li style="padding-right: 70px;" class="li">@Html.ActionLink("Inicio", "Index", "Inicio", new { @style = "color:White;" })</li>
-                    <li style="padding-right: 70px;" class="li">@Html.ActionLink("Sobre a Dream", "Index", "Sobre", new { @style = "color:White;" })</li>
-                    <li class="li">@Html.ActionLink("Reservar", "Index", "Reservar", new { @style = "color:White;" })</li>
-                    <li class="li">@Html.ActionLink("Login", "Login", "Hospede", new { @style = "color:White;" })</li>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Inicio", "Index", "Inicio")</li>
+                    <li>@Html.ActionLink("Sobre a Dream", "Index", "Sobre")</li>
+                    <li>@Html.ActionLink("Reservar", "Index", "Reservar")</li>
                 </ul>
             </div>
         </div>
