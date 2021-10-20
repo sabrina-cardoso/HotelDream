@@ -93,7 +93,7 @@ namespace HotelDreamDesktop
             {
                 if (txtSenha.Text != txtConfSenha.Text)
                 {
-                    MsgErro("Senha não coincidem!");
+                    MsgErro("Senhas não coincidem!");
                     lblSenhaErro.Visible = true;
                     return false;
                 }

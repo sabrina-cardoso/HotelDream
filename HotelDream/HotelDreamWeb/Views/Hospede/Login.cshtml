@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div>
+    <form action="=/Login/ChecarLogin" method="post">
+        <div style="align-content:center">
+            <h2>Login</h2>
+        </div>       
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-4" style="padding-top:20px;">
+                <label for="userId" class="form-label">Usuário</label>
+                <input type="text" class="form-control" name="Usuario" id="email" placeholder="email@exemplo.com" />
+            </div>
+            <div class="col-sm-4 col-sm-offset-4 text-left" style="padding-top:20px;">
+                <label for="userId" class="form-label">Senha</label>
+                <input type="password" class="form-control" name="Senha" id="senha" />
+            </div>
+            <div>
+                <br />
+            </div>
+            <div class="col-sm-4 col-sm-offset-4 text-left" style="padding-top:20px;">
+                <div class="col-sm-4">
+                    <button class="btn btn-primary center-block" type="submit">Entrar</button>
+                </div>
+            </div>
+
+        </div>
+
+    </form>
+
+
+</div>
+

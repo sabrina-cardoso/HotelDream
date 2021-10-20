@@ -120,6 +120,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HospedeController.cs" />
     <Compile Include="Controllers\SobreController.cs" />
     <Compile Include="Controllers\InicioController.cs" />
     <Compile Include="Controllers\ReservarController.cs" />
@@ -137,6 +138,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\logo-hotel.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -163,6 +165,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Inicio\Index.cshtml" />
     <Content Include="Views\Sobre\Index.cshtml" />
+    <Content Include="Views\Hospede\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
