@@ -5,14 +5,13 @@
         #nav {
             display: flex;
             justify-content: center;
-            background-color:midnightblue;
+            background-color: midnightblue;
         }
 
         .li {
             font-size: medium;
-            /*color: white !important;*/
+            padding-right: 70px;
         }
-
     </style>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,23 +21,23 @@
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="col-lg-12" style="background-color: midnightblue; padding-bottom:15px">
+            
+        </div>
+        <div class="navbar-header col-lg-12" style="padding:20px; background-color:white">
+            <img class="center-block" src="~/Images/logo-hotel.jpg" alt="Hotel Dream" width=400 height=75>
+        </div>
         <div>
-            <div style="background-color:midnightblue">
-                <br />
-            </div>
-            <div class="navbar-header col-lg-12" style="padding:20px; background-color:white">
-                <img class="center-block" src="~/Images/logo-hotel.jpg" alt="Hotel Dream" width=300 height=60>
-            </div>
-            <div class="navbar-collapse collapse">
+            <div class=" collapse col-lg-12 " id="nav">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Inicio", "Index", "Inicio")</li>
-                    <li>@Html.ActionLink("Sobre a Dream", "Index", "Sobre")</li>
-                    <li>@Html.ActionLink("Reservar", "Index", "Reservar")</li>
+                    <li class="li">@Html.ActionLink("Inicio", "Index", "Inicio" )</li>
+                    <li class="li">@Html.ActionLink("Sobre a Dream", "Index", "Sobre")</liclass="li">
+                    <li style="font-size: medium;">@Html.ActionLink("Reservar", "Index", "Reservar")</li>
                 </ul>
             </div>
         </div>
     </div>
-    <div class=" container body-content" style="padding-top:150px">
+    <div style="padding-top:150px">
         @RenderBody()
         <hr />
         <footer>
