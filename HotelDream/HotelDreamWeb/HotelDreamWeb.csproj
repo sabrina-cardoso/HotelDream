@@ -138,6 +138,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\Hotel-bed-room-window_1920x1080.jpg" />
+    <Content Include="Images\hotel.jpg" />
+    <Content Include="Images\imagemSobrenos.jpg" />
     <Content Include="Images\logo-hotel.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
