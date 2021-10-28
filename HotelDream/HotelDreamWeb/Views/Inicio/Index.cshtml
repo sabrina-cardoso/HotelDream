@@ -1,31 +1,185 @@
-﻿@{
-    ViewBag.Title = "Home Page";
-}
+﻿
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+<!DOCTYPE html>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Cosmix Free HTML5 Responsive Template | Template Stock</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" type="text/css" href="~/Content/css/bootstrap.css">
+    <!--Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="~/Content/css/style.css">
+    <!--Responsive-->
+    <link rel="stylesheet" type="text/css" href="~/Content/css/responsive.css">
+    <!--Animation-->
+    <link rel="stylesheet" type="text/css" href="~/Content/css/animate.css">
+    <!--Prettyphoto-->
+    <link rel="stylesheet" type="text/css" href="~/Content/css/prettyPhoto.css">
+    <!--Font-Awesome-->
+    <link rel="stylesheet" type="text/css" href="~/Content/css/font-awesome.css">
+    <!--Owl-Slider-->
+    <link rel="stylesheet" type="text/css" href="~/Content/css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/css/owl.theme.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/css/owl.transitions.css">
+
+</head>
+<body data-spy="scroll" data-target=".navbar-default" data-offset="100">
+    <!--Preloader-->
+    <div id="preloader">
+        <div id="pre-status">
+            <div class="preload-placeholder"></div>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+    <!--Navigation-->
+    <!--Slider-Start-->
+    <section id="slider">
+        <div id="home-carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active" style=" background-image: url('../../Images/carrossel4.jpg'); ">
+                    <div class="carousel-caption container">
+                        <div class="row">
+                            <div class="col-md-7 col-sm-12 col-xs-12">
+                                <h1>Nós Somos a Dream</h1>
+                                 <h2>HotelDream</h2>
+                                 <p>Dream - Um hotel que proporciona experiências personalizadas para nossos hóspedes em um ambiente elegante.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url('../../Images/carrossel2.jpg');">
+                    <div class="carousel-caption container">
+                        <div class="row">
+                            <div class="col-md-7 col-sm-12 col-xs-12">
+                                <h1>Nós Somos a Dream</h1>
+                                <h2>HotelDream</h2>
+                                <p>Dream - Um hotel que proporciona experiências personalizadas para nossos hóspedes em um ambiente elegante.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url('../../Images/carrossel5.jpg');">
+                    <div class="carousel-caption container">
+                        <div class="row">
+                            <div class="col-md-7 col-sm-12 col-xs-12">
+                                <h1>Nós Somos a Dream</h1>
+                                <h2>HotelDream</h2>
+                                <p>Dream - Um hotel que proporciona experiências personalizadas para nossos hóspedes em um ambiente elegante.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="home-carousel-left" href="#home-carousel" data-slide="prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                    </svg>
+                </a> <a class="home-carousel-right" href="#home-carousel" data-slide="next">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                             <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                         </svg>
+                </a>
+            </div>
+        </div>
+
+        <div class=" container body-content">
+            <br />
+            <ul class="icones">
+
+                <li>
+                    <img src="~/Images/wifi.png" width="25" />
+                    <p>Wi-Fi Grátis</p>
+                </li>
+                <li>
+                    <img src="~/Images/login.png" width="25" />
+                    <p>Faça sua reserva com segurança</p>
+                </li>
+                <li>
+                    <img src="~/Images/recepcao.png" width="25" />
+                    <p>Recepção 24 horas</p>
+                </li>
+                <li>
+                    <img src="~/Images/estacionamento.png" width="25" />
+                    <p>Estacionamento gratuito</p>
+                </li>
+
+            </ul>
+
+            <h2></h2>
+            <br />
+            <br />
+            <h4>Hospedagem de melhor qualidade</h4>
+
+
+            <div class="conj1">
+                <div class="borda1">
+                    <img src="~/Images/Borda_Blue1.jpg" />
+                </div>
+                <div class="txt1">
+                    <h5>MELHORES ACOMODAÇÕES</h5>
+                    <p>Lorem ipsum dolor sit amet. Velit corrupti qui officia voluptatem 33 accusamus incidunt qui fuga corporis. Et sint quae et atque dolores cum consequatur consequuntur in voluptatem temporibus et nesciunt .</p>
+                </div>
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+
+            <div class="conj2">
+                <div class="borda2">
+                    <img src="~/Images/Borda_Blue2.jpg" />
+                </div>
+                <div class="txt2">
+                    <h5> CAFÉ DA MANHÃ</h5>
+                    <p>Lorem ipsum dolor sit amet. Velit corrupti qui officia voluptatem 33 accusamus incidunt qui fuga corporis. Et sint quae et atque dolores cum consequatur consequuntur in voluptatem temporibus et nesciunt .</p>
+                </div>
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+
+            <div class="conj3">
+                <div class="borda3">
+                    <img src="~/Images/Borda_Blue3.jpg" />
+                </div>
+                <div class="txt3">
+                    <h5>SERVIÇO ESPECIALIZADO</h5>
+                    <p>Lorem ipsum dolor sit amet. Velit corrupti qui officia voluptatem 33 accusamus incidunt qui fuga corporis. Et sint quae et atque dolores cum consequatur consequuntur in voluptatem temporibus et nesciunt .</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </section>
+    <!--About-Section-Start-->
+    <!--Jquery-->
+    <script type="text/javascript" src="~/Scripts/js/jquery.min.js"></script>
+    <!--Boostrap-Jquery-->
+    <script type="text/javascript" src="~/Scripts/js/bootstrap.js"></script>
+    <!--Preetyphoto-Jquery-->
+    <script type="text/javascript" src="~/Scripts/js/jquery.prettyPhoto.js"></script>
+    <!--NiceScroll-Jquery-->
+    <script type="text/javascript" src="~/Scripts/js/jquery.nicescroll.js"></script>
+    <script type="text/javascript" src="~/Scripts/js/waypoints.min.js"></script>
+    <!--Isotopes-->
+    <script type="text/javascript" src="~/Scripts/js/jquery.isotope.js"></script>
+    <!--Wow-Jquery-->
+    <script type="text/javascript" src="~/Scripts/js/wow.js"></script>
+    <!--Count-Jquey-->
+    <script type="text/javascript" src="~/Scripts/js/jquery.countTo.js"></script>
+    <script type="text/javascript" src="~/Scripts/js/jquery.inview.min.js"></script>
+    <!--Owl-Crousels-Jqury-->
+    <script type="text/javascript" src="~/Scripts/js/owl.carousel.js"></script>
+    <!--Main-Scripts-->
+    <script type="text/javascript" src="~/Scripts/js/script.js"></script>
+</body>
+</html>
+
+<!-- Hosting24 Analytics Code -->
+<script type="text/javascript" src="http://stats.hosting24.com/count.php"></script>
+<!-- End Of Analytics Code -->
