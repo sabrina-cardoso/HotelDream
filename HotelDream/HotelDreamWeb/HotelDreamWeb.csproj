@@ -138,9 +138,14 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\face.png" />
     <Content Include="Images\Hotel-bed-room-window_1920x1080.jpg" />
+    <Content Include="Images\insta.png" />
+    <Content Include="Images\login-fundo.jpg" />
     <Content Include="Images\login.png" />
     <Content Include="Images\logo-hotel.jpg" />
+    <Content Include="Images\pin.png" />
+    <Content Include="Images\zap.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -168,11 +173,11 @@
     <Content Include="Views\Inicio\Index.cshtml" />
     <Content Include="Views\Sobre\Index.cshtml" />
     <Content Include="Views\Hospede\Login.cshtml" />
+    <Content Include="Views\Reservar\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\Reservar\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

@@ -58,9 +58,7 @@ namespace HotelDreamDesktop
             pnlCentro.Controls.Add(form);           
             form.Visible = true;
             form.BringToFront();
-            form.WindowState = FormWindowState.Maximized;
-            
-            
+            form.WindowState = FormWindowState.Maximized;  
         }
 
         private void btnCadFuncionario_Click(object sender, EventArgs e)
