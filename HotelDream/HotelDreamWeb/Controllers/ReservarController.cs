@@ -13,5 +13,16 @@ namespace HotelDreamWeb.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        public void DetalheQuarto()
+        {
+            Response.Redirect("/Hospede/Login");
+        }
+
+        public ActionResult detalhedopedido1()
+        {
+            return View();
+        }
     }
 }

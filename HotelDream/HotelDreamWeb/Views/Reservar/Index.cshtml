@@ -49,10 +49,12 @@
             background-color: midnightblue;
             height: 40px;
         }
+
         .preço {
             font-weight: bold;
         }
-        .glyphicon{
+
+        .glyphicon {
             width: 19px;
             height: 21px;
         }
@@ -77,14 +79,17 @@
                 <div class="card box-shadow">
                     <img class="card-img-top" src="~/Images/card1.jpg" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="container card-title">Quarto de Familia Standart</h5>
-                        <p class="container card-text">
-                            <span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span> Café da manhã<br><span class="glyphicon glyphicon-user
-" aria-hidden="true"></span> Até 4 pessoas<br><span class="glyphicon glyphicon-bed" aria-hidden="true"></span> 1 cama de casal e 1 cama de solteiro<br /><span class="
-glyphicon glyphicon-ok-circle" aria-hidden="true"></span> Estacionamento grátis
-                        </p>
-                        <h3 class="container preço">R$ 279,00</h3>
-                        <a href="~/Views/Inicio/detalhedopedido1.cshtml" class=" btn btn-primary btn-block">Reservar</a>
+                        <form action="/Reservar/DetalheQuarto">
+                            <h5 class="container card-title">Quarto de Familia Standart</h5>
+                            <p class="container card-text">
+                                <span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span> Café da manhã<br><span class="glyphicon glyphicon-user
+                                " aria-hidden="true"></span> Até 4 pessoas<br><span class="glyphicon glyphicon-bed" aria-hidden="true"></span> 1 cama de casal e 1 cama de solteiro<br /><span class="
+                                glyphicon glyphicon-ok-circle" aria-hidden="true"></span> Estacionamento grátis
+                            </p>
+                            <h3 class="container preço">R$ 279,00</h3>
+                            <button type="submit" class=" btn btn-primary btn-block">Reservar</button>
+                        </form>
+
                     </div>
                 </div>
             </div>
@@ -94,9 +99,11 @@ glyphicon glyphicon-ok-circle" aria-hidden="true"></span> Estacionamento grátis
                     <img class="card-img-top" src="~/Images/card2.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="container card-title">Quarto com 2 camas de solteiro Standart</h5>
-                        <p class="container card-text"><span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span> Café da manhã<br><span class="glyphicon glyphicon-user
+                        <p class="container card-text">
+                            <span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span> Café da manhã<br><span class="glyphicon glyphicon-user
 " aria-hidden="true"></span> Até 2 pessoas<br><span class="glyphicon glyphicon-bed" aria-hidden="true"></span> 2 camas de solteiro<br /><span class="
-glyphicon glyphicon-ok-circle" aria-hidden="true"></span> Estacionamento grátis</p>
+glyphicon glyphicon-ok-circle" aria-hidden="true"></span> Estacionamento grátis
+                        </p>
                         <h3 class="container preço">R$ 240,00</h3>
                         <a href="#" class="btn btn-primary btn-block">Reservar</a>
                     </div>
@@ -150,7 +157,7 @@ glyphicon glyphicon-ok-circle" aria-hidden="true"></span> Estacionamento grátis
                     <div class="card-body">
                         <h5 class="container card-title">Quarto com 2 camas de solteiro Deluxe</h5>
                         <p class="container card-text">
-                        <span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span> Café da manhã<br><span class="glyphicon glyphicon-user
+                            <span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span> Café da manhã<br><span class="glyphicon glyphicon-user
 " aria-hidden="true"></span> Até 2 pessoas<br><span class="glyphicon glyphicon-bed" aria-hidden="true"></span> 2 camas de solteiro<br /><span class="
 glyphicon glyphicon-ok-circle" aria-hidden="true"></span> Estacionamento grátis
                         </p>
