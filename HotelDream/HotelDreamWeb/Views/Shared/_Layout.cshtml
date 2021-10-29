@@ -39,8 +39,7 @@
     </style>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/bootstrap.css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
@@ -49,7 +48,14 @@
             
         </div>
         <div class="navbar-header col-lg-12" style="padding:20px; background-color:white">
-            <span id="spanEntrar" class="center-block"><u>@Html.ActionLink("Entrar ou Cadastre-se", "Login", "Hospede")</u></span>
+            @if (Session["Autorizado"] != null)
+            {
+                <span id="spanEntrar" class="center-block"><u>@Html.ActionLink(Session["Autorizado"].ToString(), "Login", "Hospede")</u></span>
+            }
+            else
+            {
+                <span id="spanEntrar" class="center-block"><u>@Html.ActionLink("Entrar ou Cadastre-se", "Login", "Hospede")</u></span>
+            }
             <img id="imageLogin" src="~/Images/login.png">
             <div class="col-lg-12"><img class="center-block" id="imageLogo" src="~/Images/logo-hotel.jpg" alt="Hotel Dream"></div>
         </div>

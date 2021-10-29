@@ -30,7 +30,7 @@
 </style>
 <div>
     <div id="divTotal" class="row">
-        <form id="formLogin" action="Login/ChecarLogin" method="post">
+        <form id="formLogin" action="/Hospede/ChecarLogin" method="post">
             <div class="container body-content">
                 <div style="align-content:center">
                     <h2 style="text-align: center; color: white">Login</h2>
@@ -42,16 +42,16 @@
                 <div class="col-sm-12 " style="padding-top:20px; padding-bottom:20px">
                     <label style="color:white" for="userId" class="form-label">Senha</label>
                     <input type="password" class="form-control" name="Senha" id="senha" />
-                </div>
+                    <p style="color:red; padding-top:3px">@ViewBag.erroLogin</p>
+                </div>              
                 <div style="padding:20px;">
                     <button type="submit" class="btn btn-primary center-block">Entrar</button>
                 </div>
                 <div>
-                    <button type="button" class="btn btn-primary center-block">Cadastre-se</button>
-                </div>               
+                    <button type="button" class="btn btn-primary center-block">@Html.ActionLink("Cadastre-se", "Cadastrar", "Hospede")</button>
+                </div>
             </div>
         </form>
     </div>
-
 </div>
 

@@ -209,6 +209,7 @@
     <Content Include="Views\Sobre\Index.cshtml" />
     <Content Include="Views\Hospede\Login.cshtml" />
     <Content Include="Views\Reservar\Index.cshtml" />
+    <Content Include="Views\Hospede\Cadastrar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -226,6 +227,12 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HotelDreamLib\HotelDreamLib.csproj">
+      <Project>{c2d01dfe-7dcd-46e1-8be0-7f99d8305fa6}</Project>
+      <Name>HotelDreamLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

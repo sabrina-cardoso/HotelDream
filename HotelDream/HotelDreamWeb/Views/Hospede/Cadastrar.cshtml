@@ -1,0 +1,80 @@
+﻿
+@{
+    ViewBag.Title = "Cadastrar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    #divTotal {
+        background-image: url(/Images/login-fundo.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        height: 1000px;
+        align-items: center;
+        display: flex;
+        /*flex-direction: row;
+        flex-wrap: wrap;*/
+        justify-content: center;
+    }
+
+    #formLogin {
+        width: 80%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        /*opacity: 0,4;*/
+        background: rgba(19, 5, 5, 0.7);
+    }
+</style>
+<div>
+    <div id="divTotal" class="row">
+        <form id="formLogin" action="/Hospede/ChecarCadastrar" method="post">
+            <div class="container body-content">
+                <div style="align-content:center">
+                    <h2 style="text-align: center; color: white">Cadastrar-se</h2>
+                </div>
+                <div class="col-sm-12" style="padding-top:20px;">
+                    <label style="color:white" for="userId" class="form-label">Nome</label>
+                    <input type="text" class="form-control" name="Nome" id="nome" />
+                </div>
+                <div class="col-sm-6" style="padding-top:20px;">
+                    <label style="color:white" for="userId" class="form-label">CPF</label>
+                    <input type="text" class="form-control" name="Cpf" id="cpf" />
+                </div>
+                <div class="col-sm-6" style="padding-top:20px;">
+                    <label style="color:white" for="userId" class="form-label">RG</label>
+                    <input type="text" class="form-control" name="Rg" id="rg"/>
+                </div>
+                <div class="col-sm-6" style="padding-top:20px; padding-bottom:20px">
+                    <label style="color:white" for="userId" class="form-label">Data de Nascimento</label>
+                    <input type="date" class="form-control" name="DataNasc" id="dataNasc" />
+                </div>
+                <div class="col-sm-6" style="padding-top:20px; padding-bottom:20px">
+                    <label style="color:white" for="userId" class="form-label">Telefone</label>
+                    <input type="text" class="form-control" name="Telefone" id="telefone" />
+                </div>
+                <div class="col-sm-6" style="padding-bottom:20px">
+                    <label style="color:white" for="userId" class="form-label">E-mail</label>
+                    <input type="text" class="form-control" name="Email" id="email" placeholder="email@exemplo.com" />
+                </div>
+                <div class="col-sm-6" style="padding-bottom:20px">
+                    <label style="color:white" for="userId" class="form-label">Usuário</label>
+                    <input type="text" class="form-control" name="Usuario" id="usuario" />
+                </div>
+                <div class="col-sm-6" style="padding-bottom:20px">
+                    <label style="color:white" for="userId" class="form-label">Senha</label>
+                    <input type="password" class="form-control" name="Senha" id="senha" />
+                </div>
+                <div class="col-sm-6" style="padding-bottom:30px">
+                    <label style="color:white" for="userId" class="form-label">Confirmar Senha</label>
+                    <input type="password" class="form-control" name="ConfSenha" id="confSenha" />
+                </div>
+                <div style="padding:20px;">
+                    <button type="submit" class="btn btn-primary center-block" style="padding-left: 60px; padding-right: 60px">Cadastrar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
