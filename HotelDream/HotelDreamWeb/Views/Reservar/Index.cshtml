@@ -3,6 +3,182 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<!DOCTYPE HTML>
+<html lang="pt-br">
 
-<h2>Index</h2>
+<head>
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css" />
+
+    <style>
+        .container-fluid {
+            background-color: gainsboro;
+            height: 55px;
+        }
+
+        .box-shadow {
+            box-shadow: 5px 2px 10px rgba(0,0,0,0.5);
+        }
+
+        .box-shadow-img {
+            height: 150%;
+        }
+
+        .card-img-top {
+            width: 360px;
+            height: 208px;
+        }
+
+        .card-body {
+        }
+
+        .card-title {
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .Standarts {
+            font-weight: bold;
+            height: 10px;
+        }
+
+        .card-text {
+            font-size: 12px;
+        }
+
+        .btn-primary {
+            background-color: midnightblue;
+            height: 40px;
+        }
+        .preço {
+            font-weight: bold;
+        }
+        .glyphicon{
+            width: 19px;
+            height: 21px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class=" container-fluid">
+        <h3 class="container Standarts">Reserve seu quarto</h3>
+    </div>
+    <br>
+    <div class="container">
+        <h4 class="quartos">Quartos Standarts</h4>
+    </div>
+
+    <div class=" container body-content">
+
+        <br>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card box-shadow">
+                    <img class="card-img-top" src="~/Images/card1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="container card-title">Quarto de Familia Standart</h5>
+                        <p class="container card-text">
+                            <span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span> Café da manhã<br><span class="glyphicon glyphicon-user
+" aria-hidden="true"></span> Até 4 pessoas<br><span class="glyphicon glyphicon-bed" aria-hidden="true"></span> 1 cama de casal e 1 cama de solteiro<br /><span class="
+glyphicon glyphicon-ok-circle" aria-hidden="true"></span> Estacionamento grátis
+                        </p>
+                        <h3 class="container preço">R$ 279,00</h3>
+                        <a href="~/Views/Inicio/detalhedopedido1.cshtml" class=" btn btn-primary btn-block">Reservar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card box-shadow">
+                    <img class="card-img-top" src="~/Images/card2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="container card-title">Quarto com 2 camas de solteiro Standart</h5>
+                        <p class="container card-text"><span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span> Café da manhã<br><span class="glyphicon glyphicon-user
+" aria-hidden="true"></span> Até 2 pessoas<br><span class="glyphicon glyphicon-bed" aria-hidden="true"></span> 2 camas de solteiro<br /><span class="
+glyphicon glyphicon-ok-circle" aria-hidden="true"></span> Estacionamento grátis</p>
+                        <h3 class="container preço">R$ 240,00</h3>
+                        <a href="#" class="btn btn-primary btn-block">Reservar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card box-shadow">
+                    <img class="card-img-top" src="~/Images/card3.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="container card-title">Quarto com 1 cama de casal</h5>
+                        <p class="container card-text">
+                            <span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span> Café da manhã<br><span class="glyphicon glyphicon-user
+" aria-hidden="true"></span> Até 3 pessoas<br><span class="glyphicon glyphicon-bed" aria-hidden="true"></span> 1 cama de casal<br /><span class="
+glyphicon glyphicon-ok-circle" aria-hidden="true"></span> Estacionamento grátis
+                        </p>
+                        <h3 class="container preço">R$ 289,00</h3>
+                        <a href="#" class="btn btn-primary btn-block">Reservar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <br />
+
+        <div class="container">
+            <h4 class="quartos">Quartos Deluxe</h4>
+        </div>
+
+        <br />
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card box-shadow">
+                    <img class="card-img-top" src="~/Images/5_Quarto_familia_luxuoso.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="container card-title">Quarto de familia Deluxe</h5>
+                        <p class="container card-text">
+                            <span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span> Café da manhã<br><span class="glyphicon glyphicon-user
+" aria-hidden="true"></span> Até 4 pessoas<br><span class="glyphicon glyphicon-bed" aria-hidden="true"></span> 1 cama de casal e 1 cama de solteiro<br /><span class="
+glyphicon glyphicon-ok-circle" aria-hidden="true"></span> Estacionamento grátis
+                        </p>
+                        <h3 class="container preço">R$ 389,00</h3>
+                        <a href="#" class="btn btn-primary btn-block">Reservar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card box-shadow">
+                    <img class="card-img-top" src="~/Images/4_Quarto_com_2_camas_de_solteiro_luxuoso2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="container card-title">Quarto com 2 camas de solteiro Deluxe</h5>
+                        <p class="container card-text">
+                        <span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span> Café da manhã<br><span class="glyphicon glyphicon-user
+" aria-hidden="true"></span> Até 2 pessoas<br><span class="glyphicon glyphicon-bed" aria-hidden="true"></span> 2 camas de solteiro<br /><span class="
+glyphicon glyphicon-ok-circle" aria-hidden="true"></span> Estacionamento grátis
+                        </p>
+                        <h3 class="container preço">R$ 369,00</h3>
+                        <a href="#" class="btn btn-primary btn-block">Reservar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card box-shadow">
+                    <img class="card-img-top" src="~/Images/0_Quarto_com_1_cama_de_casal4.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="container card-title">Quarto com 1 cama de casal</h5>
+                        <p class="container card-text">
+                            <span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span> Café da manhã<br><span class="glyphicon glyphicon-user
+" aria-hidden="true"></span> Até 3 pessoas<br><span class="glyphicon glyphicon-bed" aria-hidden="true"></span> 1 cama de casal<br /><span class="
+glyphicon glyphicon-ok-circle" aria-hidden="true"></span> Estacionamento grátis
+                        </p>
+                        <h3 class="container preço">R$ 319,00</h3>
+                        <a href="#" class="btn btn-primary btn-block">Reservar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
 
