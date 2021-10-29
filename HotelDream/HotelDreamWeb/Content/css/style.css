@@ -130,15 +130,15 @@ p {
 	line-height:25px;
 	font-family: 'open_sansregular';
 }
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+.fonte1, .fonte2, h3, h4, h5, h6, .fonte1, .fonte2, .h3, .h4, .h5, .h6{
  font-family: 'helvetica_ce_55_romanregular';
 }
-h1 {
+.fonte1{
 	color:#fff;
 	font-size:51px;
 	text-transform:uppercase;
 }
-h2 {
+.fonte2 {
 	color:#555;
 	font-size:35px;
 	text-transform:uppercase;
@@ -1364,18 +1364,14 @@ color:#fff;
 	justify-content: space-around;
 	text-align: center;
 }
-h4 {
+.hospedagem {
 	text-align: center;
 	height: 80px;
 	font-family: 'Yu Gothic'; 
 	font-weight: bolder;
 }
-h5 {
-	font-weight: bold;
-	font-family: 'Yu Gothic';
-}
 
-h2 {
+.linha {
 	width: 970px;
 	border-style: solid;
 	border-bottom-width: 4px;

@@ -147,18 +147,16 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Images\face.png" />
-    <Content Include="Images\Hotel-bed-room-window_1920x1080.jpg" />
-    <Content Include="Images\insta.png" />
-    <Content Include="Images\login-fundo.jpg" />
-    <Content Include="Images\login.png" />
-    <Content Include="Images\logo-hotel.jpg" />
-    <Content Include="Images\pin.png" />
-    <Content Include="Images\zap.png" />
+    <Content Include="Images\0_Quarto_com_1_cama_de_casal4.jpg" />
+    <Content Include="Images\4_Quarto_com_2_camas_de_solteiro_luxuoso2.jpg" />
     <Content Include="Images\55e07698bca8e4aa1761121600c818e0.jpg" />
+    <Content Include="Images\5_Quarto_familia_luxuoso.jpg" />
     <Content Include="Images\Borda_Blue1.jpg" />
     <Content Include="Images\Borda_Blue2.jpg" />
     <Content Include="Images\Borda_Blue3.jpg" />
+    <Content Include="Images\card1.jpg" />
+    <Content Include="Images\card2.jpg" />
+    <Content Include="Images\card3.jpg" />
     <Content Include="Images\carrossel1.jpg" />
     <Content Include="Images\carrossel2.jpg" />
     <Content Include="Images\carrossel3.jpg" />
@@ -209,6 +207,8 @@
     <Content Include="Views\Sobre\Index.cshtml" />
     <Content Include="Views\Hospede\Login.cshtml" />
     <Content Include="Views\Reservar\Index.cshtml" />
+    <Content Include="Views\Inicio\detalhedopedido1.cshtml" />
+    <Content Include="Views\Reservar\detalhedopedido1.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
